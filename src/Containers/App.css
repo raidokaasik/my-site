@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.catalogue {
+  text-align: center;
+  width: 100%;
+  background-color: gray;
+}
+
+.work {
+  display: inline-flex;
+  width: 300px;
+  height: 300px;
+  margin: 1rem;
+  background-color: lightblue;
+}
+
+.work-image {
+}
