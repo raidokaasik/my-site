@@ -1,0 +1,33 @@
+.frame {
+  display: flex;
+  flex-flow: column;
+
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  margin: 1.2rem;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 2px 1px 10px 0 rgb(212, 219, 247);
+}
+.image-link {
+  text-decoration: none;
+  color: #242424;
+}
+
+.work-image {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+/* 
+.work-title {
+  font-weight: 600;
+  padding-top: 20px;
+  text-decoration: none;
+  align-items: center;
+} */
