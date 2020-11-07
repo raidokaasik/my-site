@@ -1,14 +1,14 @@
+:root {
+  --primary-color: #242424;
+}
 .NavbarItem {
-  background: linear-gradient(
-    90deg,
-    rgb(110, 94, 254) 0%,
-    rgb(73, 63, 252, 1) 100%
-  );
+  background: #fff;
   height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
+  border-bottom: 1px solid #242424;
 }
 
 .NavbarItem h1 {
@@ -16,9 +16,10 @@
 }
 
 .navbar-logo {
-  color: #fff;
+  color: var(--primary-color);
   justify-self: start;
-  margin-left: 20px;
+  width: 100%;
+  margin-left: 4rem;
   cursor: pointer;
 }
 
@@ -34,19 +35,18 @@
   text-align: center;
   width: 70vw;
   justify-content: end;
-  margin-right: 2rem;
+  margin-right: 4rem;
   list-style: none;
 }
 
 .nav-links {
-  padding: 10px 16px;
+  padding: 10px 15px;
   text-decoration: none;
-  color: #fff;
+  color: #242424;
 }
 
 .nav-links:hover {
   width: 40px;
-  background-color: #6d76f7;
   border-radius: 5px;
 }
 
@@ -65,6 +65,7 @@
     flex-direction: column;
     position: absolute;
     top: 70px;
+
     opacity: 1;
     left: -100%;
     transition: all 0s ease;
@@ -72,11 +73,13 @@
   .nav-menu.active {
     left: 0;
     opacity: 1;
-    background: #6666f4;
+    background: var(--primary-color);
     z-index: 1;
     transition: all 0.2s ease;
   }
   .nav-links {
+    color: #fff;
+
     display: table;
     text-align: center;
     width: 100%;
@@ -84,31 +87,29 @@
   .nav-links:hover {
     width: 100%;
     padding: 10px;
-    background-color: #7577fa;
+    background-color: white;
+    color: var(--primary-color);
     border-radius: 0;
   }
   .navbar-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(25%, 50%);
+    justify-self: start;
+    width: 100%;
+    margin-left: 4rem;
   }
   .menu-icon {
     cursor: pointer;
     display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
+    justify-content: end;
+    margin-right: 3rem;
     font-size: 2rem;
-    transform: translate(-100%, 40%);
   }
 
   .fa-bars {
-    color: #fff;
+    color: var(--primary-color);
   }
 
   .fa-times {
-    color: #fff;
+    color: var(--primary-color);
     font-size: 2rem;
   }
 } ;

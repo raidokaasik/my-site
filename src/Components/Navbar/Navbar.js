@@ -15,7 +15,7 @@ class Navbar extends Component {
     return (
       <nav className="NavbarItem">
         <h1 className="navbar-logo">
-          Rida3 <i className="fab fa-react"></i>
+          Raido <span className="secondary-text">Kaasik</span>
         </h1>
         <div className="menu-icon" onClick={this.onClickHandle}>
           <i

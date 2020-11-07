@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #242424;
+}
+
+.project-container {
+  padding: 0 65px;
+  background: #fff;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+  min-height: 200px;
+}
+
+.project-menu-buttons {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}

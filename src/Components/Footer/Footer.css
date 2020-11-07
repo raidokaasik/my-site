@@ -1,0 +1,12 @@
+.footer-container {
+  height: 60px;
+  width: 100%;
+  background: #242424;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-container p {
+  color: #fff;
+}

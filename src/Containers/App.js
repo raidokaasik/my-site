@@ -2,8 +2,9 @@ import React, {Component} from "react";
 import {BrowserRouter, Link, Route} from "react-router-dom";
 import About from "../Pages/About.js";
 import Contact from "../Pages/Contact.js";
-import Works from "../Pages/Works.js";
+import Homepage from "../Components/Homepage/Homepage.js";
 import Navbar from "../Components/Navbar/Navbar.js";
+import Footer from "../Components/Footer/Footer.js";
 import "./App.css";
 
 class App extends Component {
@@ -14,9 +15,10 @@ class App extends Component {
           <Navbar />
 
           {/* //Routes */}
-          <Route path="/" component={Works} />
+          <Route exact path="/" component={Homepage} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
+          <Footer />
         </div>
       </BrowserRouter>
     );

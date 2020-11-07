@@ -1,0 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.frontimage-container {
+  background: url("/img/image-7.jpg") center center/cover no-repeat;
+  width: 100%;
+  min-height: calc(100vh - 130px);
+}
+
+.frontimage {
+}

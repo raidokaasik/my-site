@@ -1,14 +1,12 @@
 import React from "react";
 import Thumbnail from "../Components/Projects/Graphics/Thumbnails/Thumbnail";
-import "./Works.css";
+import "./Graphics.css";
 
-const works = () => {
+const graphics = () => {
   return (
-    <div className="project-container">
-      <h1>Works</h1>
-
-      <h1>Projects</h1>
-      <div className="project-grid">
+    <div className="graphics-container">
+      <h1>Graphics</h1>
+      <div className="graphics-grid">
         <Thumbnail link="/project2" image="img/beetle.jpg" title="Mern Stack" />
         <Thumbnail link="/project2" image="img/beetle.jpg" title="Mern Stack" />
         <Thumbnail link="/project2" image="img/beetle.jpg" title="Mern Stack" />
@@ -20,4 +18,4 @@ const works = () => {
   );
 };
 
-export default works;
+export default graphics;
