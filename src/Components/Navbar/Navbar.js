@@ -1,10 +1,25 @@
 import React, {Component} from "react";
 import {MenuItems} from "./MenuItems";
+import MenuButton from "./Menubutton/MenuButton.js";
 import "./Navbar.css";
 
 class Navbar extends Component {
   state = {
     clicked: false,
+    showMenu: false,
+  };
+
+  menuClickHandler = () => {
+    const menubtn = document.querySelector(".menu-btn");
+    const showMenu = this.state.showMenu;
+    if (!showMenu) {
+      menubtn.classList.add("close");
+      this.setState({showMenu: true});
+    } else {
+      menubtn.classList.remove("close");
+      this.setState({showMenu: false});
+    }
+    console.log(showMenu);
   };
 
   onClickHandle = () => {
@@ -18,9 +33,11 @@ class Navbar extends Component {
           Raido <span className="secondary-text">Kaasik</span>
         </h1>
         <div className="menu-icon" onClick={this.onClickHandle}>
-          <i
+          <MenuButton clicked={this.menuClickHandler} />
+
+          {/* <i
             className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
-          ></i>
+          ></i> */}
         </div>
         <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
           {MenuItems.map((item, index) => {

@@ -68,14 +68,14 @@
 
     opacity: 1;
     left: -100%;
-    transition: all 0s ease;
+    transition: all 0.3s ease;
   }
   .nav-menu.active {
     left: 0;
     opacity: 1;
     background: var(--primary-color);
     z-index: 1;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
   }
   .nav-links {
     color: #fff;
@@ -100,7 +100,7 @@
     cursor: pointer;
     display: block;
     justify-content: end;
-    margin-right: 3rem;
+    margin-right: 2rem;
     font-size: 2rem;
   }
 
