@@ -1,7 +1,7 @@
 .menu-btn {
   z-index: 3;
   cursor: pointer;
-  transition: all 0.5s ease-out;
+  padding: 4px 8px;
 }
 
 .btn-line {
@@ -10,9 +10,21 @@
   margin: 0 0 5px 0;
   background-color: #242424;
   border-radius: 8px;
-  transition: all 0.5s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .close {
-  transform: rotate(180deg);
+  /* transform: rotate(180deg); */
+}
+
+.close .btn-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.close .btn-line:nth-child(2) {
+  transition: all 0.2s ease;
+  opacity: 0;
+}
+.close .btn-line:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
 }

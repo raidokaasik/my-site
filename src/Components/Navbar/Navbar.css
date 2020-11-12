@@ -1,5 +1,11 @@
 :root {
   --primary-color: #242424;
+  --secondary-color: rgb(218, 159, 52);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 .NavbarItem {
   background: #fff;
@@ -46,8 +52,8 @@
 }
 
 .nav-links:hover {
-  width: 40px;
-  border-radius: 5px;
+  padding: 5px 15px;
+  border-bottom: solid 2px var(--secondary-color);
 }
 
 .menu-icon {
@@ -72,6 +78,7 @@
   }
   .nav-menu.active {
     left: 0;
+
     opacity: 1;
     background: var(--primary-color);
     z-index: 1;
@@ -85,6 +92,7 @@
     width: 100%;
   }
   .nav-links:hover {
+    border: none;
     width: 100%;
     padding: 10px;
     background-color: white;

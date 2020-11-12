@@ -14,10 +14,10 @@ class Navbar extends Component {
     const showMenu = this.state.showMenu;
     if (!showMenu) {
       menubtn.classList.add("close");
-      this.setState({showMenu: true});
+      this.setState({showMenu: !showMenu});
     } else {
       menubtn.classList.remove("close");
-      this.setState({showMenu: false});
+      this.setState({showMenu: !showMenu});
     }
     console.log(showMenu);
   };
