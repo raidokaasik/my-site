@@ -13,7 +13,6 @@ class ProjectContainer extends Component {
   itemHandler = () => {
     this.setState({expanded: true});
     console.log("test");
-    console.log(process.env.REACT_APP_GIT_KEY);
   };
   expandedItemHandler = () => {
     this.setState({expanded: false});
