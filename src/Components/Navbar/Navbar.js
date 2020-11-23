@@ -29,9 +29,9 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="NavbarItem">
-        <h1 className="navbar-logo">
+        {/* <h1 className="navbar-logo">
           Raido <span className="secondary-text">Kaasik</span>
-        </h1>
+        </h1> */}
         <div className="menu-icon" onClick={this.onClickHandle}>
           <MenuButton clicked={this.menuClickHandler} />
 

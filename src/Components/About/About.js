@@ -5,14 +5,19 @@ const about = () => {
   return (
     <div id="about">
       <h1 id="about-heading-lg">ABOUT ME</h1>
-      <div className="about-break"></div>
       <div className="about-container">
+        <div className="about-break"></div>
+
         <h2 id="about-heading-sm">
           Hi! Let me introduce myself. My name is Raido Kaasik and i'm a
           designer and developer based in Estonia
         </h2>
         <div className="about-info">
-          <img class="bio-portrait" src="img/portrait.jpg" alt="Raido Kaasik" />
+          <img
+            className="bio-portrait"
+            src="img/portrait.jpg"
+            alt="Raido Kaasik"
+          />
           <div className="bio">
             <h3>BIO</h3>
             <p>
@@ -23,9 +28,11 @@ const about = () => {
             </p>
           </div>
           <div className="job job1">
-            <h3>Gameloft</h3>
+            <h3>GAMELOFT</h3>
             <h5>Graphics Artist</h5>
+            <hr />
             <h5>2018 April - 2020 May</h5>
+            <hr />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
               dolorum hic vero perferendis officiis ipsam. Nulla exercitationem

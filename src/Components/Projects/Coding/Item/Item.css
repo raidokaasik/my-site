@@ -1,0 +1,11 @@
+.test {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  background: #fff;
+  min-width: 200px;
+  min-height: 200px;
+}

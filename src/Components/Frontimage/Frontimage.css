@@ -4,9 +4,9 @@
 }
 
 .frontimage-container {
-  background: url("/img/image-7.jpg") center center/cover no-repeat;
+  background: url("/img/image-9.png") center center/cover no-repeat;
   width: 100%;
-  min-height: calc(100vh - 130px);
+  min-height: calc(100vh - 60px);
 }
 
 .frontimage {
