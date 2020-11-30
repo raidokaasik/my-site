@@ -4,8 +4,8 @@ import Graphics from "./Graphics/Graphics.js";
 import Coding from "./Coding/Coding.js";
 import Ui from "./Ui/Ui.js";
 import Data from "../../Data/Data.js";
-import Item from "../Projects/Coding/Item/Item.js";
-import ExpandedItem from "../Projects/Coding/Item/ExpandedItem/ExpandedItem.js";
+import Item from "./Coding/Item/Item.js";
+import ExpandedItem from "./Coding/Item/ExpandedItem/ExpandedItem.js";
 
 class ProjectContainer extends Component {
   state = {

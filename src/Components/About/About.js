@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+import Portrait from "../../img/portrait.jpg";
 
 const about = () => {
   return (
@@ -13,11 +14,7 @@ const about = () => {
           designer and web-developer based in Estonia
         </h2>
         <div className="about-info">
-          <img
-            className="bio-portrait"
-            src="img/portrait.jpg"
-            alt="Raido Kaasik"
-          />
+          <img className="bio-portrait" src={Portrait} alt="Raido Kaasik" />
           <div className="bio">
             <h3>BIO</h3>
             <p>
