@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from "react";
-import FrontImage from "../Frontimage/Frontimage.js";
+import FrontPage from "../Frontpage/FrontPage.js";
 import ProjectContainer from "../Projects/ProjectContainer.js";
 import About from "../About/About.js";
 import Contact from "../Contact/Contact.js";
@@ -8,7 +8,7 @@ class Homepage extends Component {
   render() {
     return (
       <Fragment>
-        <FrontImage />
+        <FrontPage />
         <ProjectContainer />
         <About />
         <Contact />

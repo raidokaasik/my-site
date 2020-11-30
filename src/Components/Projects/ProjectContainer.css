@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 
-#projects {
+#project-main {
   align-items: center;
   color: #242424;
   padding: 30px 65px;
@@ -30,14 +30,13 @@
 
 #project-heading-lg {
   color: #242424;
-  font-size: 2.2rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 400;
   width: 82%;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
+  /* border-top-left-radius: 5px; */
   padding: 10px;
   background: rgb(221, 221, 218);
-  padding-left: 4vw;
+  padding-left: 3vw;
 }
 .project-break {
   background: rgb(224, 206, 40);
@@ -109,8 +108,9 @@
   flex-direction: row;
   justify-content: flex-end;
   padding-right: 20px;
-  gap: 60px;
+  gap: 5%;
 }
+
 .project-menu-buttons p {
   font-weight: 400;
   font-size: 1.8rem;
@@ -118,17 +118,29 @@
   margin: 3px;
 }
 .project-menu-buttons button {
+  outline: none;
   background: none;
   color: #242424;
   border: none;
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   padding: 4px 10px;
   margin: 3px;
+}
+.project-menu-buttons button .active {
+  background: var(--secondary-color);
 }
 .project-menu-buttons button:hover {
   outline: none;
   border-radius: 10px;
   border: solid 2px var(--secondary-color);
+  margin: 1px;
+}
+.menu-button.active {
+  /* color: #fff; */
+  outline: none;
+  border-radius: 10px;
+  border: solid 2px var(--secondary-color);
+  /* background-color: var(--secondary-color); */
   margin: 1px;
 }

@@ -10,7 +10,7 @@ const about = () => {
 
         <h2 id="about-heading-sm">
           Hi! Let me introduce myself. My name is Raido Kaasik and i'm a
-          designer and developer based in Estonia
+          designer and web-developer based in Estonia
         </h2>
         <div className="about-info">
           <img
@@ -30,9 +30,7 @@ const about = () => {
           <div className="job job1">
             <h3>GAMELOFT</h3>
             <h5>Graphics Artist</h5>
-            <hr />
             <h5>2018 April - 2020 May</h5>
-            <hr />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
               dolorum hic vero perferendis officiis ipsam. Nulla exercitationem

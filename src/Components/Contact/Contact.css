@@ -1,9 +1,33 @@
+:root {
+  --primary-grey: rgb(221, 221, 218);
+}
+
 #contact {
   background: rgb(235, 235, 235);
   width: 100%;
   padding: 50px 65px;
-  min-height: 200px;
+  min-height: 400px;
   color: #242424;
+}
+
+.contact-header {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  background: #242424;
+  width: 100%;
+  min-height: 50px;
+}
+
+#contact-heading-lg {
+  color: #242424;
+  font-size: 2rem;
+  font-weight: 400;
+  width: 82%;
+  /* border-top-left-radius: 5px; */
+  padding: 10px;
+  background: var(--primary-grey);
+  padding-left: 3vw;
 }
 .contact-container {
   width: 90%;
@@ -15,15 +39,29 @@
 }
 
 .contact-break {
-  background: rgb(224, 206, 40);
+  background: var(--secondary-color);
   width: 100%;
-  height: 3px;
+  height: 2px;
 }
 
 .contact-heading-lg {
-  padding-left: 5vw;
+  color: #242424;
+  font-size: 2rem;
+  font-weight: 400;
+  padding-left: 7vw;
+  padding-bottom: 15px;
 }
 
 .contact-heading-sm {
   padding: 1.5rem 0;
+  font-weight: 500;
+}
+
+.box {
+  border-radius: 5px;
+  padding: 10px 24px;
+  background-color: var(--primary-grey);
+}
+.box h3 {
+  font-size: 1.5rem;
 }

@@ -1,14 +1,41 @@
-import React, {Component, Fragment} from "react";
+import React, {Component} from "react";
 import {MenuItems} from "./MenuItems";
+import {Link} from "react-scroll";
 import MenuButton from "./Menubutton/MenuButton.js";
 import "./Navbar.css";
-import NavbarScroll from "./NavbarScroll.js";
-import navbarScroll from "./NavbarScroll.js";
 
 class Navbar extends Component {
   state = {
     clicked: false,
     showMenu: false,
+    showNav: false,
+    showNavonScroll: true,
+    navPos: 0,
+  };
+  // constructor() {
+  //   super();
+  // }
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+    // window.addEventListener("scroll");
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+
+  handleScroll = () => {
+    // console.log(document.body.getBoundingClientRect());
+    console.log(window.scrollY);
+    // this.setState({
+    //   navPos: window.scrollY,
+    //   showNavonScroll: window.scrollY > this.state.navPos,
+    // });
+    if (window.scrollY >= 80) this.setState({showNav: true});
+    else {
+      this.setState({showNav: false});
+    }
   };
 
   menuClickHandler = () => {
@@ -29,33 +56,32 @@ class Navbar extends Component {
   };
 
   render() {
+    console.log(this.state.showNavonScroll);
     return (
-      <Fragment>
-        <NavbarScroll navbarClass="NavbarItem" />
-        <nav className="NavbarItem">
-          {/* <h1 className="navbar-logo">
-          Raido <span className="secondary-text">Kaasik</span>
-        </h1> */}
-          <div className="menu-icon" onClick={this.onClickHandle}>
-            <MenuButton clicked={this.menuClickHandler} />
-
-            {/* <i
-            className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
-          ></i> */}
-          </div>
-          <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
-            {MenuItems.map((item, index) => {
-              return (
-                <li key={index}>
-                  <a className={item.cName} href={item.url}>
-                    {item.title}
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
-        </nav>
-      </Fragment>
+      <nav className={this.state.showNav ? "NavbarItem active" : "NavbarItem"}>
+        <div className="menu-icon" onClick={this.onClickHandle}>
+          <MenuButton clicked={this.menuClickHandler} />
+        </div>
+        <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
+          {MenuItems.map((item, index) => {
+            return (
+              <li key={index}>
+                <Link
+                  className={item.cName}
+                  activeClass="active"
+                  to={item.url}
+                  spy={true}
+                  smooth={true}
+                  offset={item.offset}
+                  duration={500}
+                >
+                  {item.title}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
     );
   }
 }
