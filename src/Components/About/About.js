@@ -21,6 +21,9 @@ const about = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos id
               corrupti ipsam, voluptates sed aut mollitia magni nulla
               repudiandae sapiente ex aliquam quibusdam similique vero
+              recusandae consequatur minus iusto corporis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos id
+              corrupti ipsam, voluptates sed aut mollitia magni nulla
+              repudiandae sapiente ex aliquam quibusdam similique vero
               recusandae consequatur minus iusto corporis!
             </p>
           </div>
