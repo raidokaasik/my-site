@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
   padding-left: 15vw;
-  background: url("../../img/image-9.png") center center/cover no-repeat;
+  background: url("../../img/image-9.jpg") center center/cover no-repeat;
   min-height: calc(100vh - 60px);
 }
 
