@@ -33,12 +33,26 @@
 .graphics-content-items {
   width: 100%;
   height: 100%;
-  border-radius: 5px;
-  padding: 15px;
   justify-content: center;
   align-items: center;
-  background: rgb(221, 221, 218);
+  background: #fff;
   grid-area: item;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.image-3d {
+  display: flex;
+  width: 100%;
+  min-height: 230px;
+  height: 100%;
+  background: #fff;
+}
+
+.image-3d img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
 }

@@ -1,7 +1,20 @@
 import React from "react";
 import "./Graphics.css";
+import GraphicsData from "../../../Data/imageData.js";
 
 const graphics = () => {
+  const images = GraphicsData.map(item => {
+    return (
+      <div className="image-3d">
+        <img
+          // src={require("../../../images/portrait.jpg")}
+          src={require(`../../../images/Graphics/${item.name}.jpg`)}
+          alt="nice"
+        ></img>
+      </div>
+    );
+  });
+
   return (
     <div className="graphics-content">
       <div className="graphics-content-info">
@@ -14,7 +27,13 @@ const graphics = () => {
         </p>
       </div>
       <div className="graphics-content-items">
-        <h1>Coming soon!</h1>
+        {images}
+        {/* <div className="image-3d">
+          <img
+            src={require("../../../images/portrait.jpg")}
+            alt="nice picture"
+          ></img>
+        </div> */}
       </div>
     </div>
   );

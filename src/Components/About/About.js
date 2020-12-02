@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import Portrait from "../../img/portrait.jpg";
+import Portrait from "../../images/portrait.jpg";
 
 const about = () => {
   return (
@@ -21,10 +21,11 @@ const about = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos id
               corrupti ipsam, voluptates sed aut mollitia magni nulla
               repudiandae sapiente ex aliquam quibusdam similique vero
-              recusandae consequatur minus iusto corporis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos id
-              corrupti ipsam, voluptates sed aut mollitia magni nulla
-              repudiandae sapiente ex aliquam quibusdam similique vero
-              recusandae consequatur minus iusto corporis!
+              recusandae consequatur minus iusto corporis! Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Eos id corrupti ipsam,
+              voluptates sed aut mollitia magni nulla repudiandae sapiente ex
+              aliquam quibusdam similique vero recusandae consequatur minus
+              iusto corporis!
             </p>
           </div>
           <div className="job job1">
