@@ -1,4 +1,4 @@
-.footer-container {
+#f-container {
   height: 80px;
   width: 100%;
   background: #242424;
@@ -7,6 +7,6 @@
   justify-content: center;
 }
 
-.footer-container p {
+#f-container p {
   color: #fff;
 }
