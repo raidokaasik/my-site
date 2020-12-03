@@ -13,8 +13,8 @@ class App extends Component {
           <div className="App">
             <Navbar />
             <Route exact path="/" component={Homepage} />
-            <Footer />
           </div>
+          <Footer />
         </BrowserRouter>
       </Fragment>
     );
