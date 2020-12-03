@@ -43,7 +43,6 @@
   font-size: 1.8rem;
   color: #fff;
   background: var(--primary-color);
-  /* background: linear-gradient(to right, #242424, #242424, transparent 100%); */
 }
 
 .social-media {
@@ -64,7 +63,4 @@
   height: 50px;
   border-radius: 50%;
   font-size: 1.6rem;
-}
-
-.social-media-icon i {
 }
