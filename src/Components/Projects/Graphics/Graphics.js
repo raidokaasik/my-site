@@ -1,7 +1,19 @@
 import React from "react";
 import "./Graphics.css";
+import GraphicsData from "../../../Data/imageData.js";
 
-const graphics = () => {
+const graphics = props => {
+  const images = GraphicsData.map(item => {
+    return (
+      <div className="image-3d" onClick={props.clicked}>
+        <img
+          src={require(`../../../images/Graphics/${item.name}.jpg`)}
+          alt="nice"
+        ></img>
+      </div>
+    );
+  });
+
   return (
     <div className="graphics-content">
       <div className="graphics-content-info">
@@ -12,10 +24,10 @@ const graphics = () => {
           repudiandae sapiente ex aliquam quibusdam similique vero recusandae
           consequatur minus iusto corporis!
         </p>
+        <h4>Title:</h4>
+        <hr />
       </div>
-      <div className="graphics-content-items">
-        <h1>Coming soon!</h1>
-      </div>
+      <div className="graphics-content-items">{images}</div>
     </div>
   );
 };
