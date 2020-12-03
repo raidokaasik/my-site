@@ -44,9 +44,10 @@
 .image-3d {
   display: flex;
   width: 100%;
-  min-height: 230px;
   height: 100%;
+  min-height: 230px;
   background: #fff;
+  overflow: hidden;
 }
 
 .image-3d img {
@@ -55,4 +56,21 @@
   justify-content: center;
   align-items: center;
   object-fit: cover;
+  transition: transform 0.3s, filter 0.3s ease;
+  position: relative;
+}
+
+/* .image-3d img:before {
+  content: "";
+  display: block;
+  height: 0%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  transition: 0.3s ease-in-out;
+  background: linear-gradient(to bottom, transparent 0%, #000 100%);
+} */
+
+.image-3d img:hover {
+  transform: scale(1.2);
 }

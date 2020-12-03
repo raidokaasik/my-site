@@ -3,7 +3,10 @@ import "./ProjectContainer.css";
 import Graphics from "./Graphics/Graphics.js";
 import Coding from "./Coding/Coding.js";
 import Ui from "./Ui/Ui.js";
+import Modal from "../UI/Modal/Modal.js";
+import Backdrop from "../UI/Backdrop/Backdrop.js";
 import Data from "../../Data/Data.js";
+import ImageData from "../../Data/imageData.js";
 import Item from "./Coding/Item/Item.js";
 import ExpandedItem from "./Coding/Item/ExpandedItem/ExpandedItem.js";
 
@@ -14,6 +17,8 @@ class ProjectContainer extends Component {
     graphics: false,
     coding: true,
     ui: false,
+    modal: false,
+    backDrop: false,
   };
 
   // itemHandler = () => {
@@ -32,6 +37,11 @@ class ProjectContainer extends Component {
   };
   uiHandler = () => {
     this.setState({graphics: false, coding: false, ui: true});
+  };
+
+  modalHandler = () => {
+    this.setState({modal: true});
+    console.log("modal ON");
   };
 
   render() {
@@ -67,7 +77,17 @@ class ProjectContainer extends Component {
               </button>
             </div>
             {/* <div className="project-break"></div> */}
-            {this.state.graphics ? <Graphics /> : null}
+            {this.state.modal ? (
+              <Modal>
+                <img
+                  src={require("../../images/Graphics/Graphics_04.jpg")}
+                  alt="nice"
+                ></img>
+              </Modal>
+            ) : null}
+            {this.state.graphics ? (
+              <Graphics clicked={this.modalHandler} />
+            ) : null}
             {this.state.coding ? <Coding /> : null}
             {this.state.ui ? <Ui /> : null}
             {/* {this.state.expanded ? (
