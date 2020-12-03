@@ -5,7 +5,7 @@
   min-height: 400px;
   width: auto;
   padding: 10px;
-  top: 12%;
+  top: 11%;
   transition: transform 0.3s;
 }
 .modal-content {
@@ -20,7 +20,7 @@
 }
 
 .modal-content img {
-  height: 77vh;
+  height: 75vh;
   width: auto;
 }
 
