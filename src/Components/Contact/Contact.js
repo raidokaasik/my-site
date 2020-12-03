@@ -21,9 +21,6 @@ const contact = () => {
           </div>
         </div>
       </div>
-      {/* <div className="attached-footer">
-        <p>Copyright &copy; 2020</p>
-      </div> */}
     </div>
   );
 };
