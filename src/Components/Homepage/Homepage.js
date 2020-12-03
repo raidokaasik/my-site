@@ -13,7 +13,6 @@ class Homepage extends Component {
         <ProjectContainer />
         <About />
         <Contact />
-        <Footer />
       </Fragment>
     );
   }
