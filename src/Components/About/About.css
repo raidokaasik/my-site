@@ -6,7 +6,7 @@
 #about {
   align-items: center;
   color: #fff;
-  padding: 70px 65px;
+  padding: 70px 90px;
   background: #242424;
   width: 100%;
   min-height: 200px;
@@ -28,7 +28,7 @@
 }
 #about-heading-lg {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 400;
   padding-left: 7vw;
   padding-bottom: 15px;
@@ -36,8 +36,8 @@
 
 #about-heading-sm {
   padding: 1.5rem 0;
-  font-weight: 500;
-  font-size: 1.5rem;
+  font-weight: 400;
+  font-size: 1.4rem;
 }
 
 .bio {
@@ -72,8 +72,8 @@
 
 .job {
   color: #242424;
-  border-radius: 5px;
-  padding: 1rem;
+  border-radius: 3px;
+  padding: 1.5rem;
   border-bottom: 8px solid var(--primary-grey);
   background: #fff;
 }

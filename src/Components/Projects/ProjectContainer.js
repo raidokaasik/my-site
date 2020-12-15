@@ -3,31 +3,13 @@ import "./ProjectContainer.css";
 import Graphics from "./Graphics/Graphics.js";
 import Coding from "./Coding/Coding.js";
 import Ui from "./Ui/Ui.js";
-import Modal from "../UI/Modal/Modal.js";
-import Backdrop from "../UI/Backdrop/Backdrop.js";
-import Data from "../../Data/Data.js";
-import ImageData from "../../Data/imageData.js";
-import Item from "./Coding/Item/Item.js";
-import ExpandedItem from "./Coding/Item/ExpandedItem/ExpandedItem.js";
 
 class ProjectContainer extends Component {
   state = {
-    // expandedItemId: null,
-    // expanded: false,
     graphics: false,
     coding: true,
     ui: false,
-    modal: false,
-    backDrop: false,
   };
-
-  // itemHandler = () => {
-  //   this.setState({expanded: true});
-  //   console.log("test");
-  // };
-  // expandedItemHandler = () => {
-  //   this.setState({expanded: false});
-  // };
 
   graphicsHandler = () => {
     this.setState({graphics: true, coding: false, ui: false});
@@ -40,8 +22,8 @@ class ProjectContainer extends Component {
   };
 
   modalHandler = () => {
-    this.setState({modal: true});
-    console.log("modal ON");
+    this.setState({modal: !this.state.modal});
+    this.setState({backDrop: !this.state.backDrop});
   };
 
   render() {
@@ -76,47 +58,11 @@ class ProjectContainer extends Component {
                 UI
               </button>
             </div>
-            {/* <div className="project-break"></div> */}
-            {this.state.modal ? (
-              <Modal>
-                <img
-                  src={require("../../images/Graphics/Graphics_04.jpg")}
-                  alt="nice"
-                ></img>
-              </Modal>
-            ) : null}
             {this.state.graphics ? (
               <Graphics clicked={this.modalHandler} />
             ) : null}
             {this.state.coding ? <Coding /> : null}
             {this.state.ui ? <Ui /> : null}
-            {/* {this.state.expanded ? (
-              <div className="expanded-content">
-                <ExpandedItem clicked={this.expandedItemHandler} />
-              </div>
-            ) : (
-              <div className="project-content">
-                <div className="project-content-info">
-                  <h3>Project description</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-                    id corrupti ipsam, voluptates sed aut mollitia magni nulla
-                    repudiandae sapiente ex aliquam quibusdam similique vero
-                    recusandae consequatur minus iusto corporis!
-                  </p>
-                </div>
-                <div className="project-content-items">
-                  <Item clicked={this.itemHandler} />
-                  <Item />
-                  <Item />
-                  <Item />
-                  <Item />
-                  <Item />
-                  <Item />
-                  <Item />
-                </div>
-              </div>
-            )} */}
           </div>
         </div>
       </div>

@@ -24,21 +24,23 @@
 
 .NavbarItem.active {
   z-index: 2;
-
   height: 70px;
   background-color: #fff;
   color: #242424;
-  transition: 0.3s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 .NavbarItem.hidden {
   visibility: hidden;
-  transition: 0.3s ease-in-out;
 }
 
 .NavbarItem.active .nav-links {
+  transition: 0.2s ease-in-out;
   color: #242424;
   font-weight: 400;
   grid-gap: 1%;
+}
+.NavbarItem.active .nav-links:hover {
+  color: #ccc;
 }
 
 .NavbarItem h1 {
@@ -70,18 +72,17 @@
 }
 
 .nav-links {
+  transition: 0.3s ease;
   padding: 10px 15px;
   text-decoration: none;
   color: #fff;
 }
 
 .nav-links:hover {
-  padding: 5px 15px;
-  border-bottom: solid 2px var(--secondary-color);
+  color: #ccc;
 }
 .nav-links.active {
-  padding: 5px 15px;
-  border-bottom: solid 2px var(--secondary-color);
+  color: #ccc;
 }
 
 .menu-icon {

@@ -6,10 +6,10 @@
 
 .coding-content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
-    "text item item"
-    "text item item";
+    "text item"
+    "item2 text2 ";
   padding: 25px 0;
   gap: 25px;
   width: 100%;
@@ -17,10 +17,19 @@
 }
 
 .coding-content-info {
+  margin-top: 10px;
   grid-area: text;
+  width: 90%;
+}
+.coding-content-info2 {
+  margin-top: 10px;
+
+  grid-area: text2;
+  width: 90%;
 }
 
-.coding-content-info h4 {
+.coding-content-info h4,
+.coding-content-info2 h4 {
   padding-bottom: 10px;
   font-weight: 500;
   font-size: 1.4rem;
@@ -34,11 +43,24 @@
   width: 100%;
   height: 100%;
   border-radius: 5px;
-  padding: 15px;
+  padding: 15px 25px;
   justify-content: center;
   align-items: center;
   background: rgb(221, 221, 218);
   grid-area: item;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.coding-content-items2 {
+  grid-area: item2;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  background: rgb(221, 221, 218);
   display: grid;
   grid-template-columns: 1fr;
 }
