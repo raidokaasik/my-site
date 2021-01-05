@@ -126,18 +126,23 @@
   font-weight: 400;
   font-size: 1.7rem;
   padding: 4px 10px;
+  margin: 4px;
 }
-.project-menu-buttons button .active {
+/* .project-menu-buttons button .active {
   background: var(--secondary-color);
-}
+  
+} */
 .project-menu-buttons button:hover {
   outline: none;
+  margin-bottom: 2px;
   /* border-radius: 10px; */
   border-bottom: solid 2px var(--secondary-color);
 }
 .menu-button.active {
   /* color: #fff; */
   outline: none;
+  margin-bottom: 2px;
+
   /* border-radius: 10px; */
   border-bottom: solid 2px var(--secondary-color);
   /* background-color: var(--secondary-color); */

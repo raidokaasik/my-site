@@ -67,4 +67,5 @@
 }
 
 .social-media-icon i {
+  color: var(--primary-color);
 }
