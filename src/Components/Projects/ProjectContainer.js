@@ -1,17 +1,20 @@
-import React, {Component, Fragment} from "react";
+import React, { Component, Fragment } from "react";
 import "./ProjectContainer.css";
 import Graphics from "./Graphics/Graphics.js";
 import Coding from "./Coding/Coding.js";
 import Ui from "./Ui/Ui.js";
+<<<<<<< HEAD
 import Modal from "../Ui/Modal/Modal.js";
 import Data from "../../Data/Data.js";
 import Item from "./Coding/Item/Item.js";
 import ExpandedItem from "./Coding/Item/ExpandedItem/ExpandedItem.js";
+=======
+import Dot from "./UI elements/Dot/Dot.js";
+import Line from "./UI elements/Line/BreakLine.js";
+>>>>>>> 910ba281090f131da22b0256ce1d084ad71e24b9
 
 class ProjectContainer extends Component {
   state = {
-    // expandedItemId: null,
-    // expanded: false,
     graphics: false,
     coding: true,
     ui: false,
@@ -20,22 +23,19 @@ class ProjectContainer extends Component {
     modalImageId: null,
   };
 
-  // itemHandler = () => {
-  //   this.setState({expanded: true});
-  //   console.log("test");
-  // };
-  // expandedItemHandler = () => {
-  //   this.setState({expanded: false});
-  // };
-
   graphicsHandler = () => {
-    this.setState({graphics: true, coding: false, ui: false});
+    this.setState({ graphics: true, coding: false, ui: false });
   };
   codingHandler = () => {
-    this.setState({graphics: false, coding: true, ui: false});
+    this.setState({ graphics: false, coding: true, ui: false });
   };
   uiHandler = () => {
-    this.setState({graphics: false, coding: false, ui: true});
+    this.setState({ graphics: false, coding: false, ui: true });
+  };
+
+  modalHandler = () => {
+    this.setState({ modal: !this.state.modal });
+    this.setState({ backDrop: !this.state.backDrop });
   };
 
   modalHandler = () => {
@@ -46,35 +46,45 @@ class ProjectContainer extends Component {
   render() {
     return (
       <div id="projects">
-        <div className="project-header">
-          <h1 id="project-heading-lg">PROJECTS</h1>
-        </div>
+        <div className="project-header"></div>
         <div id="project-main">
           <div className="project-container">
             <div className="project-menu-buttons">
-              <button
-                className={
-                  this.state.coding ? "menu-button active" : "menu-button"
-                }
-                onClick={this.codingHandler}
-              >
-                Programming
-              </button>
-              <button
-                className={
-                  this.state.graphics ? "menu-button active" : "menu-button"
-                }
-                onClick={this.graphicsHandler}
-              >
-                3D
-              </button>
-              <button
-                className={this.state.ui ? "menu-button active" : "menu-button"}
-                onClick={this.uiHandler}
-              >
-                UI
-              </button>
+              <div className="container-title-and-arrow">
+                <p>PROJECTS</p>
+                <div className="arrow">></div>
+              </div>
+              <div className="buttons-only">
+                <button
+                  className={
+                    this.state.coding ? "menu-button active" : "menu-button"
+                  }
+                  onClick={this.codingHandler}
+                >
+                  PROGRAMMING
+                </button>
+                <Dot />
+                <button
+                  className={
+                    this.state.graphics ? "menu-button active" : "menu-button"
+                  }
+                  onClick={this.graphicsHandler}
+                >
+                  3D
+                </button>
+                <Dot />
+                <button
+                  className={
+                    this.state.ui ? "menu-button active" : "menu-button"
+                  }
+                  onClick={this.uiHandler}
+                >
+                  UI
+                </button>
+                <Line />
+              </div>
             </div>
+<<<<<<< HEAD
             {this.state.modal ? (
               <Modal>
                 <div>
@@ -83,11 +93,14 @@ class ProjectContainer extends Component {
               </Modal>
             ) : null}
             {/* <div className="project-break"></div> */}
+=======
+>>>>>>> 910ba281090f131da22b0256ce1d084ad71e24b9
             {this.state.graphics ? (
               <Graphics clicked={this.modalHandler} />
             ) : null}
             {this.state.coding ? <Coding /> : null}
             {this.state.ui ? <Ui /> : null}
+<<<<<<< HEAD
 
             {/* {this.state.expanded ? (
               <div className="expanded-content">
@@ -116,6 +129,8 @@ class ProjectContainer extends Component {
                 </div>
               </div>
             )} */}
+=======
+>>>>>>> 910ba281090f131da22b0256ce1d084ad71e24b9
           </div>
         </div>
       </div>

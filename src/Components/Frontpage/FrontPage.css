@@ -12,8 +12,8 @@
   width: 100%;
   display: flex;
   align-items: center;
-  padding-left: 15vw;
-  background: url("../../img/image-9.jpg") center center/cover no-repeat;
+  padding-left: 18vw;
+  background: url("../../images/image-9.jpg") center center/cover no-repeat;
   min-height: calc(100vh - 60px);
 }
 
@@ -43,7 +43,6 @@
   font-size: 1.8rem;
   color: #fff;
   background: var(--primary-color);
-  /* background: linear-gradient(to right, #242424, #242424, transparent 100%); */
 }
 
 .social-media {
@@ -65,7 +64,10 @@
   border-radius: 50%;
   font-size: 1.6rem;
 }
+<<<<<<< HEAD
 
 .social-media-icon i {
   color: var(--primary-color);
 }
+=======
+>>>>>>> 910ba281090f131da22b0256ce1d084ad71e24b9

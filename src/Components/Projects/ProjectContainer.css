@@ -12,7 +12,7 @@
 #project-main {
   align-items: center;
   color: #242424;
-  padding: 30px 65px;
+  padding: 30px 90px;
   padding-bottom: 50px;
   background: #fff;
   width: 100%;
@@ -22,31 +22,14 @@
 .project-header {
   display: flex;
   justify-content: center;
-  padding: 60px 65px 0 65px;
+  padding: 60px 90px 0 90px;
   background: #242424;
   width: 100%;
   min-height: 50px;
 }
 
-#project-heading-lg {
-  color: #242424;
-  font-size: 2rem;
-  font-weight: 400;
-  width: 90%;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  padding: 10px;
-  background: rgb(221, 221, 218);
-  padding-left: 3vw;
-}
-.project-break {
-  background: rgb(224, 206, 40);
-  width: 100%;
-  height: 3px;
-}
-
 .project-container {
-  width: 90%;
+  width: 70%;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -103,25 +86,45 @@
 }
 
 .project-menu-buttons {
+  margin-top: 60px;
+  margin-bottom: 30px;
   width: 100%;
   padding-bottom: 10px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
   padding-right: 20px;
-  gap: 5%;
+  gap: 2%;
 }
 
-.project-menu-buttons p {
-  font-weight: 400;
-  font-size: 1.8rem;
-  padding: 4px 10px;
-  margin: 3px;
+.container-title-and-arrow {
+  font-size: 2rem;
+  display: flex;
+  flex-flow: row;
 }
+.arrow {
+  color: var(--secondary-color);
+  margin-left: 20px;
+  transform: rotate(0);
+  transition: 0.3s ease;
+}
+.buttons-only {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
 .project-menu-buttons button {
+  margin: 0 10px;
+  border-radius: 3px;
+  border: none;
   outline: none;
   background: none;
   color: #242424;
+<<<<<<< HEAD
   border: none;
   font-weight: 400;
   font-size: 1.7rem;
@@ -132,18 +135,53 @@
   background: var(--secondary-color);
   
 } */
+=======
+  font-weight: 300;
+  font-size: 1.8rem;
+  padding: 5px 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+>>>>>>> 910ba281090f131da22b0256ce1d084ad71e24b9
 .project-menu-buttons button:hover {
+  color: #fff;
+  background: var(--secondary-color);
   outline: none;
+<<<<<<< HEAD
   margin-bottom: 2px;
   /* border-radius: 10px; */
   border-bottom: solid 2px var(--secondary-color);
+=======
+>>>>>>> 910ba281090f131da22b0256ce1d084ad71e24b9
 }
 .menu-button.active {
-  /* color: #fff; */
+  background: var(--secondary-color);
+  color: #fff;
   outline: none;
+<<<<<<< HEAD
   margin-bottom: 2px;
 
   /* border-radius: 10px; */
   border-bottom: solid 2px var(--secondary-color);
   /* background-color: var(--secondary-color); */
+=======
+}
+.menu-button:after {
+  right: 25px;
+  background: var(--secondary-color);
+  color: #fff;
+  outline: none;
+}
+
+@media (max-width: 1350px) {
+  .arrow {
+    transform: rotate(90deg);
+  }
+  .project-menu-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 900px) {
+>>>>>>> 910ba281090f131da22b0256ce1d084ad71e24b9
 }

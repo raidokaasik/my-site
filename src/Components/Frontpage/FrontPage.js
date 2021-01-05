@@ -10,19 +10,19 @@ const frontPage = () => {
             RAIDO <span className="name-secondary">KAASIK</span>
           </h1>
         </div>
-        <div className="front-description">A developer and a designer</div>
+        <div className="front-description">A designer/developer</div>
         <div className="social-media">
           <div className="social-media-icon">
             <i className="fab fa-facebook"></i>
           </div>
           <div className="social-media-icon">
-            <i class="fab fa-github"></i>
+            <i className="fab fa-github"></i>
           </div>
           <div className="social-media-icon">
-            <i class="fab fa-instagram"></i>
+            <i className="fab fa-instagram"></i>
           </div>
           <div className="social-media-icon">
-            <i class="fab fa-linkedin"></i>
+            <i className="fab fa-linkedin"></i>
           </div>
         </div>
       </div>

@@ -13,10 +13,6 @@
   transition: all 0.3s ease-out;
 }
 
-.close {
-  /* transform: rotate(180deg); */
-}
-
 .close .btn-line:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }

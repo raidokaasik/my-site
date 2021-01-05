@@ -1,0 +1,9 @@
+.experience-container {
+  position: relative;
+  padding: 10px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
