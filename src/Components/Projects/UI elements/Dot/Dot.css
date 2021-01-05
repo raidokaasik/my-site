@@ -1,0 +1,9 @@
+:root {
+  --secondary-color: rgb(95, 200, 241);
+}
+
+.break-dot {
+  background: var(--secondary-color);
+  width: 8px;
+  height: 2px;
+}

@@ -1,4 +1,4 @@
-import React, {Fragment, useState, useEffect} from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import "./Graphics.css";
 import GraphicsData from "../../../Data/imageData.js";
 import Backdrop from "../../UI/Backdrop/Backdrop.js";
@@ -10,7 +10,7 @@ function Graphics(props) {
   const [backDrop, setBackDrop] = useState(false);
   const [count, setCount] = useState(0);
 
-  const modalHandler = item => {
+  const modalHandler = (item) => {
     setModal(!modal);
     setBackDrop(!backDrop);
     setCurrentImage(item);
@@ -21,7 +21,7 @@ function Graphics(props) {
   const prevImageHandler = () => {
     if (currentImage.nr > 1) {
       setCurrentImage(
-        GraphicsData.filter(item => {
+        GraphicsData.filter((item) => {
           return (
             item.nr < GraphicsData.length && item.nr === currentImage.nr - 1
           );
@@ -34,7 +34,7 @@ function Graphics(props) {
   const nextImageHandler = () => {
     if (currentImage.nr !== GraphicsData.length) {
       setCurrentImage(
-        GraphicsData.filter(item => {
+        GraphicsData.filter((item) => {
           return (
             item.nr < GraphicsData.length + 1 && item.nr === currentImage.nr + 1
           );
@@ -46,21 +46,19 @@ function Graphics(props) {
 
   const images = GraphicsData.map((item, index) => {
     return (
-      <div>
-        <div
-          key={index + item}
-          className="image-3d"
-          onClick={() => modalHandler(item)}
-        >
-          <div className="image-overlay">
-            <h1>See more</h1>
-          </div>
-          <img
-            className="image"
-            src={require(`../../../images/Graphics/ThumbnailImages/${item.name}.jpg`)}
-            alt="nice"
-          ></img>
+      <div
+        key={index + item}
+        className="image-3d"
+        onClick={() => modalHandler(item)}
+      >
+        <div className="image-overlay">
+          <h1>See more</h1>
         </div>
+        <img
+          className="image"
+          src={require(`../../../images/Graphics/ThumbnailImages/${item.name}.jpg`)}
+          alt="nice"
+        ></img>
       </div>
     );
   });
@@ -86,7 +84,7 @@ function Graphics(props) {
         : null}
       {backDrop ? <Backdrop clicked={modalHandler} /> : null}
       <div className="graphics-content">
-        <div className="graphics-content-info">
+        {/* <div className="graphics-content-info">
           <h4>Graphics projects</h4>
           <hr />
           <p>
@@ -98,7 +96,7 @@ function Graphics(props) {
             Title: <span>Tacticraft Buildings</span>
           </h4>
           <hr />
-        </div>
+        </div> */}
         <div className="graphics-content-items">{images}</div>
       </div>
     </Fragment>
