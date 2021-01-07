@@ -124,47 +124,21 @@
   outline: none;
   background: none;
   color: #242424;
-<<<<<<< HEAD
-  border: none;
-  font-weight: 400;
-  font-size: 1.7rem;
-  padding: 4px 10px;
-  margin: 4px;
-}
-/* .project-menu-buttons button .active {
-  background: var(--secondary-color);
-  
-} */
-=======
   font-weight: 300;
   font-size: 1.8rem;
   padding: 5px 16px;
   transition: all 0.3s ease-in-out;
 }
 
->>>>>>> 910ba281090f131da22b0256ce1d084ad71e24b9
 .project-menu-buttons button:hover {
   color: #fff;
   background: var(--secondary-color);
   outline: none;
-<<<<<<< HEAD
-  margin-bottom: 2px;
-  /* border-radius: 10px; */
-  border-bottom: solid 2px var(--secondary-color);
-=======
->>>>>>> 910ba281090f131da22b0256ce1d084ad71e24b9
 }
 .menu-button.active {
   background: var(--secondary-color);
   color: #fff;
   outline: none;
-<<<<<<< HEAD
-  margin-bottom: 2px;
-
-  /* border-radius: 10px; */
-  border-bottom: solid 2px var(--secondary-color);
-  /* background-color: var(--secondary-color); */
-=======
 }
 .menu-button:after {
   right: 25px;
@@ -183,5 +157,4 @@
   }
 }
 @media (max-width: 900px) {
->>>>>>> 910ba281090f131da22b0256ce1d084ad71e24b9
 }
