@@ -1,7 +1,7 @@
 import React from "react";
 import "./Card.css";
 
-const card = (props) => {
+const card = props => {
   return (
     <div className="job">
       <h3>{props.title}</h3>

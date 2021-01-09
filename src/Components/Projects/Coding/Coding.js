@@ -7,19 +7,24 @@ const coding = () => {
   return (
     <div className="coding-content">
       <div className="coding-content-info">
-        <h4>Coding projects</h4>
+        <h4>BURGER BUILDER</h4>
         <hr />
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-          repudiandae sapiente ex aliquam quibusdam similique vero recusandae
-          consequatur minus iusto corporis!
+          Small size front-end study project made with React and Redux. Firebase
+          is used for data storing.
         </p>
+        <hr />
+        <div className="project-tags">
+          <div>HTML5</div>
+          <div>CSS3</div>
+          <div>REACT</div>
+        </div>
       </div>
       <div className="coding-content-items">
-        <img src={CodingImage} alt="Project Image"></img>
+        <img src={CodingImage} alt="coding"></img>
         <div className="coding-content-overlay">
           <p>REACT PROJECT</p>
-          <p style={{ fontSize: "32px" }}>CREATIVE WEBSITE</p>
+          <p style={{fontSize: "32px"}}>CREATIVE WEBSITE</p>
           <div className="coding-content-overlay-buttons">
             <button>WEBSITE</button>
             <button>GITHUB</button>
@@ -38,7 +43,7 @@ const coding = () => {
       </div>
 
       <div className="coding-content-items2">
-        <img src={CodingImage2} alt="Project Image"></img>
+        <img src={CodingImage2} alt="coding"></img>
       </div>
     </div>
   );

@@ -12,8 +12,7 @@
 #project-main {
   align-items: center;
   color: #242424;
-  padding: 30px 90px;
-  padding-bottom: 50px;
+  padding: 30px 70px 80px 70px;
   background: #fff;
   width: 100%;
   min-height: 200px;
@@ -147,7 +146,7 @@
   outline: none;
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1024px) {
   .arrow {
     transform: rotate(90deg);
   }

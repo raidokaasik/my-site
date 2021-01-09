@@ -6,16 +6,22 @@
 #about {
   align-items: center;
   color: #fff;
-  padding: 70px 90px;
+  padding: 70px 70px;
   background: #242424;
   width: 100%;
   min-height: 200px;
 }
-.transition {
+
+.layout-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* .transition {
   background: #ccc;
   height: 80px;
   width: 100%;
-}
+} */
 .about-break {
   background: var(--secondary-color);
   width: 100%;
@@ -118,14 +124,4 @@
   grid-area: bioimage;
   border-radius: 50%;
   margin: auto;
-}
-
-.job1 {
-  grid-area: job1;
-}
-.job2 {
-  grid-area: job2;
-}
-.job3 {
-  grid-area: job3;
 }
