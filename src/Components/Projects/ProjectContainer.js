@@ -1,4 +1,4 @@
-import React, {Component, Fragment} from "react";
+import React, { Component, Fragment } from "react";
 import "./ProjectContainer.css";
 import Graphics from "./Graphics/Graphics.js";
 import Coding from "./Coding/Coding.js";
@@ -17,23 +17,23 @@ class ProjectContainer extends Component {
   };
 
   graphicsHandler = () => {
-    this.setState({graphics: true, coding: false, ui: false});
+    this.setState({ graphics: true, coding: false, ui: false });
   };
   codingHandler = () => {
-    this.setState({graphics: false, coding: true, ui: false});
+    this.setState({ graphics: false, coding: true, ui: false });
   };
   uiHandler = () => {
-    this.setState({graphics: false, coding: false, ui: true});
+    this.setState({ graphics: false, coding: false, ui: true });
   };
 
   modalHandler = () => {
-    this.setState({modal: !this.state.modal});
-    this.setState({backDrop: !this.state.backDrop});
+    this.setState({ modal: !this.state.modal });
+    this.setState({ backDrop: !this.state.backDrop });
   };
 
   modalHandler = () => {
     console.log("modal ON");
-    this.setState({modal: true});
+    this.setState({ modal: true });
   };
 
   render() {
@@ -77,6 +77,18 @@ class ProjectContainer extends Component {
                 <Line />
               </div>
             </div>
+            {/* <SubMenu
+              leftButton={this.state.coding}
+              leftButtonTitle
+              leftButtonHandler
+              middleButton={this.state.graphics}
+              middleButtonTitle
+              middleButtonHandler
+              rightButton={this.state.ui}
+              rightButtonTitle
+              rightButtonHandler
+            /> */}
+
             {this.state.graphics ? (
               <Graphics clicked={this.modalHandler} />
             ) : null}

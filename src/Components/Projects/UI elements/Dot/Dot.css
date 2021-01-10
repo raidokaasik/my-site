@@ -4,6 +4,7 @@
 
 .break-dot {
   background: var(--secondary-color);
-  width: 8px;
+  min-width: 6px;
+  width: 6px;
   height: 2px;
 }
