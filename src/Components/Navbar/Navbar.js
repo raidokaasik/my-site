@@ -1,6 +1,6 @@
-import React, {Component} from "react";
-import {MenuItems} from "./MenuItems";
-import {Link} from "react-scroll";
+import React, { Component } from "react";
+import { MenuItems } from "./MenuItems";
+import { Link } from "react-scroll";
 import MenuButton from "./Menubutton/MenuButton.js";
 import "./Navbar.css";
 
@@ -12,13 +12,9 @@ class Navbar extends Component {
     showNavonScroll: true,
     navPos: 0,
   };
-  // constructor() {
-  //   super();
-  // }
 
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
-    // window.addEventListener("scroll");
   }
 
   componentWillUnmount() {
@@ -26,15 +22,9 @@ class Navbar extends Component {
   }
 
   handleScroll = () => {
-    // console.log(document.body.getBoundingClientRect());
-    console.log(window.scrollY);
-    // this.setState({
-    //   navPos: window.scrollY,
-    //   showNavonScroll: window.scrollY > this.state.navPos,
-    // });
-    if (window.scrollY >= 80) this.setState({showNav: true});
+    if (window.scrollY >= 80) this.setState({ showNav: true });
     else {
-      this.setState({showNav: false});
+      this.setState({ showNav: false });
     }
   };
 
@@ -43,16 +33,16 @@ class Navbar extends Component {
     const showMenu = this.state.showMenu;
     if (!showMenu) {
       menubtn.classList.add("close");
-      this.setState({showMenu: !showMenu});
+      this.setState({ showMenu: !showMenu });
     } else {
       menubtn.classList.remove("close");
-      this.setState({showMenu: !showMenu});
+      this.setState({ showMenu: !showMenu });
     }
     console.log(showMenu);
   };
 
   onClickHandle = () => {
-    return this.setState({clicked: !this.state.clicked});
+    return this.setState({ clicked: !this.state.clicked });
   };
 
   render() {

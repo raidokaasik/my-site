@@ -13,7 +13,7 @@
 .coding-content-item img {
   position: sticky;
   opacity: 1;
-  border-radius: 5px;
+  border-radius: 2px;
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -67,7 +67,7 @@
 }
 @media (max-width: 900px) {
   .coding-content-item {
-    min-width: 350px;
+    min-width: 200px;
     min-height: 200px;
     height: 200px;
     width: 100%;
