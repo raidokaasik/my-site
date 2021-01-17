@@ -8,3 +8,13 @@
   width: 6px;
   height: 2px;
 }
+
+@media (max-width: 1350px) {
+  .break-dot {
+  }
+}
+@media (max-width: 900px) {
+  .break-dot {
+    opacity: 0;
+  }
+}

@@ -52,7 +52,7 @@
   font-weight: 400px;
   display: flex;
   flex-flow: row;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .about-menu-buttons {
   display: flex;
@@ -61,14 +61,14 @@
   justify-content: center;
 }
 .about-menu-buttons button {
-  margin: 0 10px;
+  margin: 0 3px;
   border-radius: 3px;
   border: none;
   outline: none;
   background: none;
   color: #fff;
   font-weight: 300;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   padding: 5px 16px;
   transition: all 0.3s ease-in-out;
 }
@@ -107,13 +107,6 @@
 }
 
 .about-info {
-  /* display: grid;
-  gap: 20px;
-  grid-template-areas:
-    "bioimage job1"
-    "bio job2"
-    "bio job3";
-  grid-template-columns: repeat(2, 1fr); */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -124,4 +117,57 @@
   grid-area: bioimage;
   border-radius: 50%;
   margin: auto;
+}
+
+@media (max-width: 1024px) {
+  .bio {
+    margin-bottom: 20px;
+  }
+  .layout-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about-info {
+  }
+  .bio h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    /* padding-bottom: 20px; */
+  }
+}
+@media (max-width: 900px) {
+  #about-heading-sm {
+    padding: 1.5rem 0;
+    font-weight: 300;
+    font-size: 1.3rem;
+  }
+  .about-menu {
+    /* align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px; */
+  }
+  .about-menu-buttons {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  #about {
+    align-items: center;
+    color: #fff;
+    padding: 30px;
+    background: #242424;
+  }
+  .about-menu {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
 }

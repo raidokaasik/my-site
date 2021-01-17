@@ -48,60 +48,29 @@ class About extends Component {
             designer and web-developer based in Estonia
           </h2>
           <div className="layout-grid">
-            <div className="left">
-              <div className="about-info">
-                <div className="bio">
-                  <Portrait />
-                  <h3>BIO</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-                    id corrupti ipsam, voluptates sed aut mollitia magni nulla
-                    repudiandae sapiente ex aliquam quibusdam similique vero
-                    recusandae consequatur minus iusto corporis! Lorem ipsum
-                    dolor sit amet consectetur adipisicing elit. Eos id corrupti
-                    ipsam, voluptates sed aut mollitia magni nulla repudiandae
-                    sapiente ex aliquam quibusdam similique vero recusandae
-                    consequatur minus iusto corporis!
-                  </p>
-                </div>
+            <div className="about-info">
+              <div className="bio">
+                <Portrait />
+                <h3>BIO</h3>
+                {/* <div className="bio-breakline">
+                    <Line />
+                  </div> */}
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                  id corrupti ipsam, voluptates sed aut mollitia magni nulla
+                  repudiandae sapiente ex aliquam quibusdam similique vero
+                  recusandae consequatur minus iusto corporis! Lorem ipsum dolor
+                  sit amet consectetur adipisicing elit. Eos id corrupti ipsam,
+                  voluptates sed aut mollitia magni nulla repudiandae sapiente
+                  ex aliquam quibusdam similique vero recusandae consequatur
+                  minus iusto corporis!
+                </p>
               </div>
-              <div className="right"></div>
             </div>
 
             {this.state.experience ? <Experience /> : null}
             {this.state.expertise ? <Expertise /> : null}
             {/* {this.state.education ? <Education /> : null} */}
-
-            {/* <div className="job job1">
-            <h3>GAMELOFT</h3>
-            <h5>Graphics Artist</h5>
-            <h5>2018 April - 2020 May</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-              dolorum hic vero perferendis officiis ipsam. Nulla exercitationem
-              unde iste tempore.
-            </p>
-          </div>
-          <div className="job job2">
-            <h3>Gameloft</h3>
-            <h5>Graphics Artist</h5>
-            <h5>2018 April - 2020 May</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-              dolorum hic vero perferendis officiis ipsam. Nulla exercitationem
-              unde iste tempore.
-            </p>
-          </div>
-          <div className="job job3">
-            <h3>Gameloft</h3>
-            <h5>Graphics Artist</h5>
-            <h5>2018 April - 2020 May</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-              dolorum hic vero perferendis officiis ipsam. Nulla exercitationem
-              unde iste tempore.
-            </p>
-          </div> */}
           </div>
         </div>
       </div>

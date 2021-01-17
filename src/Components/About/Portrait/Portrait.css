@@ -8,8 +8,18 @@
   transform: scale(0.8);
   border-radius: 50%;
   border: solid 5px rgb(95, 200, 241);
+  transition: 0.3s;
 }
-
+@media (max-width: 900px) {
+  .portrait {
+    transform: scale(0.8);
+  }
+}
+@media (max-width: 750px) {
+  .portrait {
+    transform: scale(0.7);
+  }
+}
 /* .portrait-left{
     transform: translateX(45%);
     transition: .5s ease;
