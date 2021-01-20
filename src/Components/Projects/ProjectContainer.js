@@ -77,17 +77,6 @@ class ProjectContainer extends Component {
                 <Line />
               </div>
             </div>
-            {/* <SubMenu
-              leftButton={this.state.coding}
-              leftButtonTitle
-              leftButtonHandler
-              middleButton={this.state.graphics}
-              middleButtonTitle
-              middleButtonHandler
-              rightButton={this.state.ui}
-              rightButtonTitle
-              rightButtonHandler
-            /> */}
 
             {this.state.graphics ? (
               <Graphics clicked={this.modalHandler} />

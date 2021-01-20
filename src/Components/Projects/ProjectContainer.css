@@ -21,10 +21,9 @@
 .project-header {
   display: flex;
   justify-content: center;
-  padding: 60px 90px 0 90px;
   background: #242424;
   width: 100%;
-  min-height: 50px;
+  min-height: 60px;
 }
 
 .project-container {
@@ -147,14 +146,47 @@
   outline: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1056px) {
+  .project-menu-buttons {
+    gap: 2px;
+    /* padding-right: 20px; */
+  }
+  .project-menu-buttons button {
+    margin: 0 2px;
+  }
+  .arrow {
+    margin: 0 0 0 5px;
+  }
 }
 @media (max-width: 900px) {
   .arrow {
     transform: rotate(90deg);
   }
+  .project-menu-buttons button {
+    margin: 2px 10px;
+    border-radius: 3px;
+    border: 1px solid var(--secondary-color);
+
+    width: 300px;
+    font-size: 1.6rem;
+    padding: 5px 16px;
+  }
+  .project-menu-buttons button:hover {
+    color: #fff;
+    background: var(--secondary-color);
+    outline: none;
+  }
+  .project-menu-buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
 
   .buttons-only {
+    margin-top: 10px;
     justify-content: center;
     align-items: center;
     width: 100%;

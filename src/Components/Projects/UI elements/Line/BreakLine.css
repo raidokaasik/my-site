@@ -26,6 +26,11 @@
   .break-line {
   }
 }
+@media (max-width: 1056px) {
+  .break-line {
+    opacity: 0;
+  }
+}
 @media (max-width: 900px) {
   .break-line {
     margin-top: 10px;

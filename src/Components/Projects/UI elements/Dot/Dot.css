@@ -13,6 +13,11 @@
   .break-dot {
   }
 }
+@media (max-width: 1056px) {
+  .break-dot {
+    opacity: 0;
+  }
+}
 @media (max-width: 900px) {
   .break-dot {
     opacity: 0;

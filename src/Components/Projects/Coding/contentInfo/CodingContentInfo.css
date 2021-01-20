@@ -34,3 +34,12 @@
     margin-top: 0;
   }
 }
+@media (max-width: 499px) {
+  .coding-content-info {
+    min-width: 200px;
+    min-height: 150px;
+    height: 150px;
+    width: 90%;
+    margin-top: 0;
+  }
+}
