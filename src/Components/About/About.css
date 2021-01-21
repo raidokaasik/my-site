@@ -178,12 +178,18 @@
   #about {
     align-items: center;
     color: #fff;
+<<<<<<< HEAD
     padding: 20px;
     background: #242424;
   }
   .about-content {
     width: 100%;
   }
+=======
+    padding: 30px;
+    background: #242424;
+  }
+>>>>>>> d232290344f748dfb9e394afc8970d57e26a1a4e
   .about-menu-buttons {
     align-items: center;
     display: flex;
@@ -197,11 +203,14 @@
     flex-direction: column;
     margin-bottom: 20px;
   }
+<<<<<<< HEAD
   .about-info {
     width: 95%;
     justify-content: center;
     align-items: center;
   }
+=======
+>>>>>>> d232290344f748dfb9e394afc8970d57e26a1a4e
   .about-menu-buttons button {
     margin: 2px 10px;
     border-radius: 3px;

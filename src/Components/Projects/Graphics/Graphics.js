@@ -1,8 +1,8 @@
-import React, {Fragment, useState, useEffect} from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import "./Graphics.css";
 import GraphicsData from "../../../Data/imageData.js";
-import Backdrop from "../../../Components/Ui/Backdrop/Backdrop.js";
-import Modal from "../../../Components/Ui/Modal/Modal.js";
+import Backdrop from "../../../Components/UI/Backdrop/Backdrop.js";
+import Modal from "../../../Components/UI/Modal/Modal.js";
 
 function Graphics(props) {
   const [currentImage, setCurrentImage] = useState({});
@@ -10,7 +10,7 @@ function Graphics(props) {
   const [backDrop, setBackDrop] = useState(false);
   const [count, setCount] = useState(0);
 
-  const modalHandler = item => {
+  const modalHandler = (item) => {
     setModal(!modal);
     setBackDrop(!backDrop);
     setCurrentImage(item);
@@ -21,7 +21,7 @@ function Graphics(props) {
   const prevImageHandler = () => {
     if (currentImage.nr > 1) {
       setCurrentImage(
-        GraphicsData.filter(item => {
+        GraphicsData.filter((item) => {
           return (
             item.nr < GraphicsData.length && item.nr === currentImage.nr - 1
           );
@@ -34,7 +34,7 @@ function Graphics(props) {
   const nextImageHandler = () => {
     if (currentImage.nr !== GraphicsData.length) {
       setCurrentImage(
-        GraphicsData.filter(item => {
+        GraphicsData.filter((item) => {
           return (
             item.nr < GraphicsData.length + 1 && item.nr === currentImage.nr + 1
           );
