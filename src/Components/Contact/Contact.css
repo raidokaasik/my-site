@@ -1,5 +1,6 @@
 :root {
   --primary-grey: rgb(221, 221, 218);
+  --secondary-color: rgb(95, 200, 241);
 }
 
 #contact {
@@ -9,15 +10,6 @@
 
   min-height: 300px;
   color: #242424;
-}
-
-.contact-header {
-  display: flex;
-  justify-content: center;
-  padding: 60px 90px 0 90px;
-  background: #242424;
-  width: 100%;
-  min-height: 50px;
 }
 
 #contact-heading-lg {
@@ -31,6 +23,50 @@
   background: var(--primary-grey);
   padding-left: 3vw;
 }
+
+.contact-info {
+  width: 40%;
+  display: flex;
+  flex-flow: column;
+  gap: 2px;
+}
+
+.contact-input {
+  font-size: 1.1rem;
+  outline: none;
+  border: 1px solid #5e5d5d;
+  padding: 6px 14px;
+  border-radius: 3px;
+  transition: 0.3s ease;
+}
+.send-button {
+  margin: 10px 0 0 0;
+  background-color: var(--secondary-color);
+  display: flex;
+  color: white;
+  border-radius: 3px;
+  padding: 8px 20px;
+  align-self: flex-start;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+}
+.contact-input:hover {
+  border: 1px solid var(--secondary-color);
+}
+
+.contact-info textarea {
+  resize: none;
+}
+.contact-header {
+  display: flex;
+  justify-content: center;
+  padding: 60px 90px 0 90px;
+  background: #242424;
+  width: 100%;
+  min-height: 50px;
+}
+
 .contact-container {
   width: 90%;
   display: flex;
@@ -67,4 +103,15 @@
 .box h3 {
   font-weight: 500;
   font-size: 1.5rem;
+}
+
+@media (max-width: 1056px) {
+}
+
+@media (max-width: 900px) {
+  .contact-heading-sm {
+    font-size: 1.4rem;
+    padding: 1.5rem 0;
+    font-weight: 400;
+  }
 }

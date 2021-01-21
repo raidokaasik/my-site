@@ -10,7 +10,7 @@ const frontPage = () => {
             RAIDO <span className="name-secondary">KAASIK</span>
           </h1>
         </div>
-        <div className="front-description">A designer/developer</div>
+        <div className="front-description">A designer/ developer</div>
         <div className="social-media">
           <div className="social-media-icon">
             <i className="fab fa-facebook"></i>
