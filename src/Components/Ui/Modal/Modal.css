@@ -5,7 +5,9 @@
   flex-flow: row;
   background: transparent;
   min-height: 400px;
-  width: auto;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   padding: 10px;
   top: 4%;
   transition: transform 0.3s;
@@ -15,8 +17,8 @@
   justify-content: center;
   align-items: center;
   object-fit: contain;
-  padding: 7px;
-  background: rgba(255, 255, 255, 0.9);
+  padding: 5px;
+  background: rgba(231, 231, 231, 0.9);
   min-height: 200px;
   border-radius: 3px;
 }
@@ -31,14 +33,13 @@
   padding: 10px;
   display: flex;
   flex-flow: column;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
   background: transparent;
 }
 
 .modal-next,
 .modal-prev {
-  font-size: 3rem;
+  font-size: 2rem;
   cursor: pointer;
   color: rgba(136, 132, 132, 0.5);
   background: transparent;
@@ -46,18 +47,28 @@
   transition: all 0.2s ease-in-out;
 }
 .modal-next {
+  display: flex;
+  align-self: flex-end;
   position: relative;
   top: -5vh;
 }
+.modal-prev {
+  display: flex;
+  align-self: flex-start;
+  position: relative;
+}
 .modal-close {
+  display: flex;
+  align-self: flex-end;
   cursor: pointer;
   color: rgba(141, 136, 136, 0.8);
   background: transparent;
   padding: 5px;
   transition: all 0.2s ease-in-out;
   position: relative;
-  top: -33vh;
-  font-size: 2.5rem;
+  top: -40vh;
+  font-size: 2rem;
+  font-weight: ;
 }
 
 .modal-next:hover,
