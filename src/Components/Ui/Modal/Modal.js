@@ -1,7 +1,7 @@
 import React from "react";
 import "./Modal.css";
 
-const modal = (props) => (
+const modal = props => (
   <div className="modal">
     <div className="modal-buttons-left">
       <div onClick={props.prev} className="modal-prev">
@@ -9,9 +9,10 @@ const modal = (props) => (
       </div>
     </div>
     <div className="modal-content">{props.children}</div>
+
     <div className="modal-buttons-right">
       <div onClick={props.close} className="modal-close">
-        <i className="far fa-times-circle"></i>
+        <i className="fas fa-times"></i>
       </div>
       <div onClick={props.next} className="modal-next">
         <i className="fas fa-chevron-right"></i>
