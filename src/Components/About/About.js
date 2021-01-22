@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import "./About.css";
 import Portrait from "./Portrait/Portrait.js";
 import Dot from "../Projects/UI elements/Dot/Dot.js";
@@ -14,13 +14,13 @@ class About extends Component {
   };
 
   experienceHandler = () => {
-    this.setState({experience: true, expertise: false, education: false});
+    this.setState({ experience: true, expertise: false, education: false });
   };
   expertiseHandler = () => {
-    this.setState({experience: false, expertise: true, education: false});
+    this.setState({ experience: false, expertise: true, education: false });
   };
   educationHandler = () => {
-    this.setState({experience: false, expertise: false, education: true});
+    this.setState({ experience: false, expertise: false, education: true });
   };
 
   render() {

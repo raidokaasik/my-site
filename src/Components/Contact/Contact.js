@@ -3,7 +3,7 @@ import "./Contact.css";
 import emailjs from "emailjs-com";
 
 const contact = () => {
-  const sendEmail = event => {
+  const sendEmail = (event) => {
     event.preventDefault();
 
     emailjs
@@ -14,10 +14,10 @@ const contact = () => {
         "user_C2fAucUjs6M8lHOKqJFCq"
       )
       .then(
-        result => {
+        (result) => {
           console.log(result.text);
         },
-        error => {
+        (error) => {
           console.log(error.text);
         }
       );
@@ -26,9 +26,11 @@ const contact = () => {
 
   return (
     <div id="contact">
-      <h1 className="contact-heading-lg">CONTACT ME</h1>
       <div className="contact-container">
-        {/* <div className="contact-break"></div> */}
+        <div className="contact-heading-lg">
+          <h1>CONTACT ME</h1>
+        </div>
+
         <h2 className="contact-heading-sm">
           If you have any questions or requests, contact me below
         </h2>

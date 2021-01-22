@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --primary-color: #242424;
+  --secondary-color: rgb(95, 200, 241);
+  --primary-grey: rgb(221, 221, 218);
+}
 
 .graphics-content {
   display: flex;
@@ -43,32 +48,53 @@
 
 .image-overlay {
   padding: 5px;
-  background: orange;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   transition: 0.3s ease;
   opacity: 0;
   position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(7vw, 0);
+  transform: translate(5vw, 0);
   text-align: center;
 }
-.image-overlay h1 {
-  color: #242424;
-  background: orange;
+
+.image-3d:hover .image-overlay {
+  opacity: 1;
   z-index: 100;
+  transform: translate(5vw, 15vh);
+}
+.image-overlay button {
+  border-radius: 3px;
+  outline: none;
+  position: relative;
+  border: 1px solid var(--primary-color);
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 0 3px 0 3px;
+  padding: 6px 24px;
+  background: none;
+  transition: 0.3s ease;
+}
+.image-overlay button:hover {
+  background: #fff;
+  color: var(--primary-color);
+}
+
+.image-overlay p {
+  margin: 0 0 10px 0;
+  color: #242424;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+.image-overlay h5 {
+  font-weight: 500;
+  margin: 0 0 5px 0;
 }
 
 .image-3d:hover .image {
   transform: scale(1.05);
   opacity: 0.3;
-}
-.image-3d:hover .image-overlay {
-  opacity: 1;
-  z-index: 100;
-  transform: translate(7vw, 10vw);
 }
 
 .graphics-title {
@@ -84,10 +110,10 @@
     min-width: 300px;
   }
   .image-3d:hover .image-overlay {
-    transform: translate(8vw, 10vw);
+    transform: translate(7vw, 13vh);
   }
   .image-overlay {
-    transform: translate(8vw, 0);
+    transform: translate(7vw, 0);
   }
 }
 @media (max-width: 900px) {
@@ -100,10 +126,19 @@
     min-width: 350px;
     min-height: 350px;
   }
-  .image-3d:hover .image-overlay {
-    transform: translate(18vw, 20vw);
-  }
   .image-overlay {
-    transform: translate(18vw, 0%);
+    transform: translate(16vw, 0%);
+  }
+  .image-3d:hover .image-overlay {
+    transform: translate(16vw, 18vh);
+  }
+}
+
+@media (max-width: 560px) {
+  .image-overlay {
+    transform: translate(15vw, 0%);
+  }
+  .image-3d:hover .image-overlay {
+    transform: translate(15vw, 20vw);
   }
 }
