@@ -11,26 +11,17 @@ const expertise = () => {
     "MARMOSET TOOLBAG 3",
     "SUBSTANCE PAINTER",
   ];
-  const codingList = [
-    "HTML5",
-    "CSS3",
-    "JS ES6",
-    "REACT",
-    // "NODE JS",
-    // "MONGODB/MONGOOSE",
-  ];
+  const codingList = ["HTML5", "CSS3", "JS ES6", "REACT"];
   const serviceList = [
     "CONCEPT ART DEVELOPMENT",
     "MOBILE GAME DEVELOPMENT",
     "3D CONCEPTING",
     "3D MODELLING(low poly/high poly)",
     "TEXTURE PAINTING",
-    // "NODE JS",
-    // "MONGODB/MONGOOSE",
   ];
-  const services = serviceList.map(item => <li>{item}</li>);
-  const skills = skillList.map(item => <li>{item}</li>);
-  const coding = codingList.map(item => <li>{item}</li>);
+  const services = serviceList.map((item) => <li>{item}</li>);
+  const skills = skillList.map((item) => <li>{item}</li>);
+  const coding = codingList.map((item) => <li>{item}</li>);
 
   return (
     <div className="expertise-container">

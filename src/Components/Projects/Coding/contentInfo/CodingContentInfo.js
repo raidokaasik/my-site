@@ -1,7 +1,7 @@
 import React from "react";
 import "./CodingContentInfo.css";
 import Tag from "../tag/Tag.js";
-import Line from "../../UI elements/Line/BreakLine.js";
+import Line from "../../../UI/Line/BreakLine.js";
 
 const codingContentInfo = (props) => {
   return (

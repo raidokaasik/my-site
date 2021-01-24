@@ -3,8 +3,8 @@ import "./ProjectContainer.css";
 import Graphics from "./Graphics/Graphics.js";
 import Coding from "./Coding/Coding.js";
 import Ui from "./Ui/Ui.js";
-import Dot from "./UI elements/Dot/Dot.js";
-import Line from "./UI elements/Line/BreakLine.js";
+import Dot from "../UI/Dot/Dot.js";
+import Line from "../UI/Line/BreakLine.js";
 
 class ProjectContainer extends Component {
   state = {

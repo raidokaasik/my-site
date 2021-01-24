@@ -3,9 +3,9 @@ import "./Contact.css";
 import emailjs from "emailjs-com";
 
 const contact = () => {
+  // EMAIL JS Form submission
   const sendEmail = (event) => {
     event.preventDefault();
-
     emailjs
       .sendForm(
         "service_b96exus",

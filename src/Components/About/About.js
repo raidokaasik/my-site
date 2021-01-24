@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import "./About.css";
 import Portrait from "./Portrait/Portrait.js";
-import Dot from "../Projects/UI elements/Dot/Dot.js";
-import Line from "../Projects/UI elements/Line/BreakLine.js";
+import Dot from "../UI/Dot/Dot.js";
+import Line from "../UI/Line/BreakLine.js";
+import Education from "./Education/Education.js";
 import Experience from "./Experience/Experience.js";
 import Expertise from "./Expertise/Expertise.js";
 
@@ -73,9 +74,7 @@ class About extends Component {
             <div className="about-info">
               <Portrait />
               <h3>BIO</h3>
-              {/* <div className="bio-breakline">
-                    <Line />
-                  </div> */}
+
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos id
                 corrupti ipsam, voluptates sed aut mollitia magni nulla
@@ -90,7 +89,7 @@ class About extends Component {
             <div className="about-content">
               {this.state.experience ? <Experience /> : null}
               {this.state.expertise ? <Expertise /> : null}
-              {/* {this.state.education ? <Education /> : null} */}
+              {this.state.education ? <Education /> : null}
             </div>
           </div>
         </div>
