@@ -71,7 +71,7 @@
   color: var(--primary-color);
 }
 .social-media-icon i:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   color: var(--secondary-color);
 }
 
