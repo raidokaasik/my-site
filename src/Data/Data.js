@@ -1,45 +1,15 @@
 const data = [
   {
     id: "a1",
-    name: "react-project-1",
-    info: "First Coding project",
+    title: "COURSE PROJECT",
+    info:
+      "Burger builder is an application made during React course. It allows user to authenticate, create a burger, place an order, submit it and later check their orders. All data and authentication is handled via Firebase ",
     description: "React project ",
-    label: "Front-End",
-  },
-  {
-    id: "a2",
-    name: "react-project-2",
-    info: "First Coding project",
-    description: "React project ",
-    label: "Front-End",
-  },
-  {
-    id: "a3",
-    name: "react-project-3",
-    info: "First Coding project",
-    description: "React project ",
-    label: "Front-End",
-  },
-  {
-    id: "a4",
-    name: "react-project-4",
-    info: "First Coding project",
-    description: "React project ",
-    label: "Front-End",
-  },
-  {
-    id: "a5",
-    name: "react-project-5",
-    info: "First Coding project",
-    description: "React project ",
-    label: "Front-End",
-  },
-  {
-    id: "a6",
-    name: "react-project-6",
-    info: "First Coding project",
-    description: "React project ",
-    label: "Front-End",
+    label: "REACT APP",
+    website: "https://builder-app-9a83c.firebaseapp.com/",
+    github: "https://github.com/raidokaasik/burger-builder",
+    tags: ["HTML", "CSS", "REACT", "FIREBASE", "REDUX"],
+    logo: "burgerBuilder_icon.jpg",
   },
 ];
 

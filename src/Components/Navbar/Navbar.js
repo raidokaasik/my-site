@@ -38,7 +38,6 @@ class Navbar extends Component {
       menubtn.classList.remove("close");
       this.setState({ showMenu: !showMenu });
     }
-    console.log(showMenu);
   };
 
   onClickHandle = () => {

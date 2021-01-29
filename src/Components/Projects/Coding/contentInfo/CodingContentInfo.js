@@ -11,9 +11,9 @@ const codingContentInfo = (props) => {
       <p>{props.description}</p>
       <Line color="lightgray" height="1px" />
       <div className="project-tags">
-        <Tag name="HTML" color="#e44d26" />
-        <Tag name="CSS3" color="#2299f8" />
-        <Tag name="REACT" color="#61dafb" />
+        {props.tags.map((item) => (
+          <Tag name={item} />
+        ))}
       </div>
     </div>
   );

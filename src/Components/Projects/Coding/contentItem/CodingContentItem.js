@@ -9,8 +9,10 @@ const codingContentItem = (props) => {
         <p className="small-title">{props.smallTitle}</p>
         <p className="big-title">{props.bigTitle}</p>
         <div className="coding-content-overlay-buttons">
-          <button>{props.leftButton}</button>
-          <button>{props.rightButton}</button>
+          <button onclick="">{props.rightButton}</button>
+          <button type="submit" formaction={props.githubURL}>
+            {props.leftButton}
+          </button>
         </div>
       </div>
     </div>

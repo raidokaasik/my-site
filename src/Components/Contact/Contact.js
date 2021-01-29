@@ -1,8 +1,16 @@
 import React from "react";
 import "./Contact.css";
 import emailjs from "emailjs-com";
+import { useForm } from "react-hook-form";
 
-const contact = () => {
+const Contact = () => {
+  const [email, setEmail] = React.useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
   // EMAIL JS Form submission
   const sendEmail = (event) => {
     event.preventDefault();
@@ -15,14 +23,21 @@ const contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          console.log(result);
         },
         (error) => {
-          console.log(error.text);
+          console.log(error);
         }
       );
     event.target.reset();
   };
+
+  // React Hook Form
+  const onSubmit = (data) => {
+    console.log(data);
+  };
+
+  const { register, handleSubmit, errors } = useForm();
 
   return (
     <div id="contact">
@@ -36,24 +51,31 @@ const contact = () => {
         </h2>
         <form className="contact-info" onSubmit={sendEmail}>
           <input
+            ref={register({ required: true })}
             className="contact-input"
             type="text"
             name="name"
             placeholder="Your Name"
           />
+          {errors.name && errors.name.type === "required" && (
+            <p>Name is required</p>
+          )}
           <input
+            ref={register({ required: true })}
             className="contact-input"
             type="email"
             name="email"
             placeholder="Your Email"
           />
           <input
+            ref={register({ required: true })}
             className="contact-input"
             type="text"
             name="subject"
             placeholder="Subject"
           />
           <textarea
+            ref={register({ required: true })}
             className="contact-input"
             type="textarea"
             rows="4"
@@ -68,4 +90,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default Contact;

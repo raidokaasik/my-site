@@ -1,6 +1,7 @@
 .tag {
   font-size: 0.9rem;
-  color: white;
+  color: #242424;
+  border: 1px solid #242424;
   padding: 3px 12px;
   border-radius: 25px;
 }

@@ -1,44 +1,33 @@
 import React from "react";
 import "./Coding.css";
-
 import CodingContentItem from "./contentItem/CodingContentItem.js";
 import CodingContentInfo from "./contentInfo/CodingContentInfo.js";
-import CodingImage from "../../../images/Coding/project-1.jpg";
-import CodingImage2 from "../../../images/Coding/project-2.jpg";
+import data from "../../../Data/Data.js";
 
 const coding = () => {
-  return (
-    <div className="coding-content">
+  const codingProjects = data.map((item) => {
+    return (
       <div className="coding-content-element">
         <CodingContentItem
-          imageSource={CodingImage}
-          smallTitle="REACT PROJECT"
-          bigTitle="CREATIVE PROJECT"
+          key={item.id}
+          imageSource={require(`../../../images/Coding/` + item.logo)}
+          smallTitle={item.label}
+          bigTitle={item.title}
           leftButton="WEBSITE"
           rightButton="GITHUB"
+          websiteURL={item.website}
+          githubURL={item.github}
         />
         <CodingContentInfo
-          title="BURGER BUILDER"
-          description="Small size front-end study project made with React and Redux. Firebase
-        is used for data storing."
+          title={item.title}
+          description={item.info}
+          tags={item.tags}
         />
       </div>
-      <div className="coding-content-element">
-        <CodingContentItem
-          imageSource={CodingImage}
-          smallTitle="REACT PROJECT"
-          bigTitle="CREATIVE PROJECT"
-          leftButton="WEBSITE"
-          rightButton="GITHUB"
-        />
-        <CodingContentInfo
-          title="BURGER BUILDER"
-          description="Small size front-end study project made with React and Redux. Firebase
-        is used for data storing."
-        />
-      </div>
-    </div>
-  );
+    );
+  });
+
+  return <div className="coding-content">{codingProjects}</div>;
 };
 
 export default coding;
