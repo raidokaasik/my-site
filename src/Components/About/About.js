@@ -27,8 +27,6 @@ class About extends Component {
   render() {
     return (
       <div id="about">
-        {/* <div className="transition"></div> */}
-        {/* <h1 id="about-heading-lg">ABOUT ME</h1> */}
         <div className="about-container">
           <div className="about-menu">
             <div className="about-title-and-arrow">
@@ -47,20 +45,20 @@ class About extends Component {
               <Dot />
               <button
                 className={
-                  this.state.expertise ? "about-button active" : "about-button"
-                }
-                onClick={this.expertiseHandler}
-              >
-                SKILLS
-              </button>
-              <Dot />
-              <button
-                className={
                   this.state.education ? "about-button active" : "about-button"
                 }
                 onClick={this.educationHandler}
               >
                 EDUCATION
+              </button>
+              <Dot />
+              <button
+                className={
+                  this.state.expertise ? "about-button active" : "about-button"
+                }
+                onClick={this.expertiseHandler}
+              >
+                SKILLS
               </button>
               <Line />
             </div>

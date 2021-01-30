@@ -63,7 +63,7 @@ class ProjectContainer extends Component {
                   }
                   onClick={this.graphicsHandler}
                 >
-                  3D
+                  GRAPHICS
                 </button>
                 <Dot />
                 <button

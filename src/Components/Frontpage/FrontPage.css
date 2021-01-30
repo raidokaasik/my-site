@@ -54,6 +54,7 @@
 }
 
 .social-media-icon {
+  text-decoration: none;
   cursor: pointer;
   color: var(--primary-color);
   display: flex;

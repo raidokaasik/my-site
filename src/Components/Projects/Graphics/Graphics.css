@@ -18,7 +18,7 @@
 
 .graphics-content-items {
   justify-content: center;
-  gap: 7px;
+  gap: 10px;
   width: 100%;
   height: 100%;
   background: #fff;
@@ -29,7 +29,7 @@
 .image-3d {
   display: flex;
   min-width: 350px;
-  min-height: 350px;
+  height: 350px;
   overflow: hidden;
   transition: 0.5s ease;
   position: relative;

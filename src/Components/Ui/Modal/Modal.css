@@ -2,10 +2,11 @@
   position: fixed;
   z-index: 20;
   display: flex;
+  justify-content: center;
   flex-flow: row;
   background: transparent;
   min-height: 400px;
-  width: auto;
+  width: 100%;
   padding: 10px;
   top: 4%;
   transition: transform 0.3s;
@@ -28,6 +29,7 @@
 
 .modal-buttons-left,
 .modal-buttons-right {
+  width: 100%;
   padding: 10px;
   display: flex;
   flex-flow: column;
@@ -38,26 +40,35 @@
 
 .modal-next,
 .modal-prev {
-  font-size: 3rem;
+  font-size: 2rem;
   cursor: pointer;
   color: rgba(136, 132, 132, 0.5);
   background: transparent;
   padding: 5px 10px;
   transition: all 0.2s ease-in-out;
 }
+.modal-prev {
+  display: flex;
+  align-self: flex-start;
+}
+
 .modal-next {
+  display: flex;
+  align-self: flex-end;
   position: relative;
   top: -5vh;
 }
 .modal-close {
+  display: flex;
+  align-self: flex-end;
   cursor: pointer;
   color: rgba(141, 136, 136, 0.8);
   background: transparent;
   padding: 5px;
   transition: all 0.2s ease-in-out;
   position: relative;
-  top: -33vh;
-  font-size: 2.5rem;
+  top: -40vh;
+  font-size: 2rem;
 }
 
 .modal-next:hover,
@@ -67,10 +78,3 @@
   color: rgba(202, 199, 199);
   transform: scale(1.1);
 }
-
-/* .modal-prev:active {
-  left: -5px;
-}
-.modal-next:active {
-  right: -5px;
-} */

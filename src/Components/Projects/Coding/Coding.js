@@ -13,8 +13,8 @@ const coding = () => {
           imageSource={require(`../../../images/Coding/` + item.logo)}
           smallTitle={item.label}
           bigTitle={item.title}
-          leftButton="WEBSITE"
-          rightButton="GITHUB"
+          leftButton="GITHUB"
+          rightButton="WEBSITE"
           websiteURL={item.website}
           githubURL={item.github}
         />

@@ -33,6 +33,12 @@
     width: 90%;
     margin-top: 0;
   }
+  .project-tags {
+    padding: 10px 5px;
+    display: flex;
+    flex-flow: row;
+    gap: 2px;
+  }
 }
 @media (max-width: 499px) {
   .coding-content-info {

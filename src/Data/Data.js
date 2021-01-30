@@ -9,7 +9,7 @@ const data = [
     website: "https://builder-app-9a83c.firebaseapp.com/",
     github: "https://github.com/raidokaasik/burger-builder",
     tags: ["HTML", "CSS", "REACT", "FIREBASE", "REDUX"],
-    logo: "burgerBuilder_icon.jpg",
+    logo: "burgerBuilder_icon_03.jpg",
   },
 ];
 

@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #242424;
+  --secondary-color: rgb(95, 200, 241);
+}
+
 .coding-content-item {
   width: 500px;
   min-width: 450px;
@@ -6,7 +11,7 @@
   border-radius: 3px;
   justify-content: center;
   align-items: center;
-  background: rgb(221, 221, 218);
+  background: white;
   display: flex;
   grid-template-columns: 1fr;
 }
@@ -20,18 +25,23 @@
   transition: 0.3s ease;
 }
 .coding-content-item:hover img {
-  opacity: 0.3;
+  opacity: 0.1;
 }
 
 .coding-content-overlay {
   position: absolute;
   opacity: 0;
-  transform: translate(6vw, 0);
+  transform: translate(0, -10vh);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   transition: 0.3s ease;
+}
+.coding-content-item:hover .coding-content-overlay {
+  opacity: 1;
+  display: flex;
+  transform: translate(0, 0vh);
 }
 .small-title {
   font-size: 1.2rem;
@@ -39,11 +49,7 @@
 .big-title {
   font-size: 1.8rem;
 }
-.coding-content-item:hover .coding-content-overlay {
-  opacity: 1;
-  display: flex;
-  transform: translate(6vw, 4vh);
-}
+
 .coding-content-overlay-buttons {
   margin-top: 30px;
   display: flex;
@@ -52,15 +58,41 @@
   align-items: center;
   background: transparent;
 }
-.coding-content-overlay-buttons button {
-  font-size: 1rem;
+.coding-content-overlay-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  border-radius: 4px;
+  text-decoration: none;
+
+  font-size: 1.1rem;
   margin: 0 3px 0 3px;
   padding: 4px 10px;
+  transition: 0.3s ease;
+}
+
+.website-link,
+.github-link {
+  gap: 5px;
+  color: #242424;
+  border: 1px solid #242424;
+}
+
+.website-link:hover {
+  border: 1px solid var(--secondary-color);
+  background: var(--secondary-color);
+  color: white;
+}
+.github-link:hover {
+  border: 1px solid var(--secondary-color);
+  background: var(--secondary-color);
+  color: white;
 }
 
 @media (max-width: 1350px) {
   .coding-content-overlay {
-    transform: translate(5vw, 0);
+    transform: translate(0vw, -8vh);
   }
   .small-title {
     font-size: 1rem;
@@ -69,7 +101,7 @@
     font-size: 1.4rem;
   }
   .coding-content-item:hover .coding-content-overlay {
-    transform: translate(5vw, 6vh);
+    transform: translate(0vw, 0vh);
   }
 
   .coding-content-item {
@@ -82,11 +114,11 @@
 }
 @media (max-width: 900px) {
   .coding-content-overlay {
-    transform: translate(1vw, -10vh);
+    transform: translate(0vw, -6vh);
   }
 
   .coding-content-item:hover .coding-content-overlay {
-    transform: translate(1vw, 1vh);
+    transform: translate(0vw, 0vh);
   }
   .coding-content-item {
     display: flex;

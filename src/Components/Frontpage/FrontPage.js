@@ -12,7 +12,35 @@ const frontPage = () => {
         </div>
         <div className="front-description">A designer/ developer</div>
         <div className="social-media">
-          <div className="social-media-icon">
+          <a
+            href="https://www.artstation.com/sipowich"
+            className="social-media-icon"
+            target="_blank"
+          >
+            <i className="fab fa-artstation"></i>
+          </a>
+          <a
+            href="https://github.com/raidokaasik"
+            className="social-media-icon"
+            target="_blank"
+          >
+            <i className="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/raido_kaasik/"
+            className="social-media-icon"
+            target="_blank"
+          >
+            <i className="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/raidokaasik/"
+            className="social-media-icon"
+            target="_blank"
+          >
+            <i className="fab fa-linkedin"></i>
+          </a>
+          {/* <div className="social-media-icon">
             <i className="fab fa-facebook"></i>
           </div>
           <div className="social-media-icon">
@@ -23,7 +51,7 @@ const frontPage = () => {
           </div>
           <div className="social-media-icon">
             <i className="fab fa-linkedin"></i>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
