@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from "react";
+import React, { Fragment, useState } from "react";
 import "./Graphics.css";
 import GraphicsData from "../../../Data/imageData.js";
 import Backdrop from "../../../Components/UI/Backdrop/Backdrop.js";
