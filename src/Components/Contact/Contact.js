@@ -1,15 +1,9 @@
 import React from "react";
 import "./Contact.css";
 import emailjs from "emailjs-com";
-import { useForm } from "react-hook-form";
 
 const Contact = () => {
-  const [email, setEmail] = React.useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
+  const [mailSent, setMailSent] = React.useState(false);
 
   // EMAIL JS Form submission
   const sendEmail = (event) => {
@@ -24,6 +18,7 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result);
+          setMailSent(true);
         },
         (error) => {
           console.log(error);
@@ -32,59 +27,61 @@ const Contact = () => {
     event.target.reset();
   };
 
-  // React Hook Form
-  const onSubmit = (data) => {
-    console.log(data);
-  };
+  const onScreenAlert = (
+    <div className="onscreen-alert">
+      <h2>Thank you for your e-mail!</h2>
+      <p>I will get in contact with you as soon as possible.</p>
+    </div>
+  );
 
-  const { register, handleSubmit, errors } = useForm();
+  const form = mailSent ? (
+    onScreenAlert
+  ) : (
+    <form onSubmit={sendEmail}>
+      <input
+        className="contact-input"
+        type="text"
+        name="name"
+        placeholder="Your Name"
+      />
+
+      <input
+        className="contact-input"
+        type="email"
+        name="email"
+        placeholder="Your Email"
+      />
+      <input
+        className="contact-input"
+        type="text"
+        name="subject"
+        placeholder="Subject"
+      />
+      <textarea
+        className="contact-input"
+        type="textarea"
+        rows="7"
+        cols="50"
+        name="message"
+        placeholder="Message"
+      />
+      <input type="submit" className="send-button" value="SEND" />
+    </form>
+  );
 
   return (
     <div id="contact">
       <div className="contact-container">
-        <div className="contact-heading-lg">
-          <h1>CONTACT ME</h1>
+        <div className="contact-title-and-arrow">
+          <p>CONTACT ME</p>
+          <div className="arrow">></div>
         </div>
-
-        <h2 className="contact-heading-sm">
-          If you have any questions or requests, contact me below
-        </h2>
-        <form className="contact-info" onSubmit={sendEmail}>
-          <input
-            ref={register({ required: true })}
-            className="contact-input"
-            type="text"
-            name="name"
-            placeholder="Your Name"
-          />
-          {errors.name && errors.name.type === "required" && (
-            <p>Name is required</p>
-          )}
-          <input
-            ref={register({ required: true })}
-            className="contact-input"
-            type="email"
-            name="email"
-            placeholder="Your Email"
-          />
-          <input
-            ref={register({ required: true })}
-            className="contact-input"
-            type="text"
-            name="subject"
-            placeholder="Subject"
-          />
-          <textarea
-            ref={register({ required: true })}
-            className="contact-input"
-            type="textarea"
-            rows="4"
-            cols="50"
-            name="message"
-            placeholder="Message"
-          />
-          <input type="submit" className="send-button" value="SEND" />
-        </form>
+        <div className="contact-info">
+          <h2 className="contact-heading-sm">
+            If you have any questions or requests, contact me below.
+          </h2>
+          {form}
+        </div>
       </div>
     </div>
   );

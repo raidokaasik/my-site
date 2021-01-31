@@ -1,6 +1,8 @@
 .coding-content-info {
+  padding: 0px 16px;
   margin-top: 10px;
-  width: 500px;
+  /* width: 500px; */
+  width: 100%;
 }
 
 .coding-content-info h4 {
@@ -15,7 +17,7 @@
 }
 
 .project-tags {
-  padding: 10px 5px;
+  padding: 10px 0;
   display: flex;
   flex-flow: row;
   gap: 5px;
@@ -32,6 +34,7 @@
     height: 200px;
     width: 90%;
     margin-top: 0;
+    margin-bottom: 40px;
   }
   .project-tags {
     padding: 10px 5px;
