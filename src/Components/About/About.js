@@ -64,8 +64,8 @@ class About extends Component {
             </div>
           </div>
           <h2 id="about-heading-sm">
-            Hi! Let me introduce myself. My name is Raido Kaasik and i'm a
-            designer and web-developer based in Estonia
+            Hi! My name is Raido Kaasik, and i'm a senior concept-artist for
+            Gameloft and a web-developer based in Estonia
           </h2>
 
           <div className="layout-grid">
@@ -74,14 +74,8 @@ class About extends Component {
               <h3>BIO</h3>
 
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos id
-                corrupti ipsam, voluptates sed aut mollitia magni nulla
-                repudiandae sapiente ex aliquam quibusdam similique vero
-                recusandae consequatur minus iusto corporis! Lorem ipsum dolor
-                sit amet consectetur adipisicing elit. Eos id corrupti ipsam,
-                voluptates sed aut mollitia magni nulla repudiandae sapiente ex
-                aliquam quibusdam similique vero recusandae consequatur minus
-                iusto corporis!
+                I have worked past 8 years as concept-artist in mobile game
+                industry and lived most of that time in Hungary and Romania.
               </p>
             </div>
             <div className="about-content">

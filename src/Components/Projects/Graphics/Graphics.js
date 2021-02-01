@@ -4,7 +4,7 @@ import GraphicsData from "../../../Data/imageData.js";
 import Backdrop from "../../../Components/UI/Backdrop/Backdrop.js";
 import Modal from "../../../Components/UI/Modal/Modal.js";
 
-function Graphics(props) {
+function Graphics() {
   const [currentImage, setCurrentImage] = useState({});
   const [modal, setModal] = useState(false);
   const [backDrop, setBackDrop] = useState(false);
@@ -15,7 +15,6 @@ function Graphics(props) {
     setBackDrop(!backDrop);
     setCurrentImage(item);
     setCount(item.nr);
-    console.log(currentImage);
   };
 
   const prevImageHandler = () => {
@@ -28,7 +27,6 @@ function Graphics(props) {
         }).reduce((el, el2) => el2, {})
       );
     }
-    console.log(currentImage.nr);
   };
 
   const nextImageHandler = () => {
@@ -41,7 +39,6 @@ function Graphics(props) {
         }).reduce((el, el2) => el2, {})
       );
     }
-    console.log(currentImage.nr);
   };
 
   const images = GraphicsData.map((item, index) => {
@@ -54,7 +51,6 @@ function Graphics(props) {
         <div className="image-overlay">
           <h5>BLENDER, PHOTOSHOP</h5>
           <p>LOREM IPSUM</p>
-          {/* <button>MORE</button> */}
         </div>
         <img
           className="image"

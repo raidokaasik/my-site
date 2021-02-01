@@ -1,16 +1,10 @@
 const graphicsData = [
-  // {
-  //   id: "g01",
-  //   name: "Graphics_01",
-  // },
-  // {
-  //   id: "g02",
-  //   name: "Graphics_02",
-  // },
   {
     nr: 1,
     id: "g03",
     name: "Graphics_03",
+    softwareUsed: ["BLENDER", "PHOTOSHOP"],
+    title: "",
   },
   {
     nr: 2,

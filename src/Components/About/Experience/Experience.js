@@ -8,23 +8,20 @@ const experience = () => {
       <Card
         title="GAMELOFT"
         position="Graphics artist"
-        date="2018 April - 2020 May"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorum hic
-        vero perferendis officiis ipsam. Nulla exercitationem unde iste tempore."
+        date="Apr 2013  - Oct 2015 "
+        description="Responsible for creating artwork for new game assets, which mainly consisted of characters, creatures, props and environments."
+      />
+      <Card
+        title="FOXIUM"
+        position="Graphics artist"
+        date="Nov 2015  - Mar 2017 "
+        description="Responsible for creating fully rendered game assets, which consisted of backgrounds, symbols and UI elements."
       />
       <Card
         title="GAMELOFT"
         position="Graphics artist"
-        date="2018 April - 2020 May"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorum hic
-        vero perferendis officiis ipsam. Nulla exercitationem unde iste tempore."
-      />
-      <Card
-        title="GAMELOFT"
-        position="Graphics artist"
-        date="2018 April - 2020 May"
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorum hic
-        vero perferendis officiis ipsam. Nulla exercitationem unde iste tempore."
+        date="Sep 2017  - Present"
+        description="Responsible for setting up visual style for mobile games, creating concept-art pipeline for it and feedback junior artists."
       />
     </div>
   );

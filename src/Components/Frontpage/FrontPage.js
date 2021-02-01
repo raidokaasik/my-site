@@ -3,6 +3,8 @@ import "./FrontPage.css";
 
 const frontPage = () => {
   return (
+    // Name and Social media Icons
+
     <div className="frontimage-container">
       <div className="front-header">
         <div className="front-title">
@@ -16,6 +18,7 @@ const frontPage = () => {
             href="https://www.artstation.com/sipowich"
             className="social-media-icon"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <i className="fab fa-artstation"></i>
           </a>
@@ -23,6 +26,7 @@ const frontPage = () => {
             href="https://github.com/raidokaasik"
             className="social-media-icon"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <i className="fab fa-github"></i>
           </a>
@@ -30,6 +34,7 @@ const frontPage = () => {
             href="https://www.instagram.com/raido_kaasik/"
             className="social-media-icon"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <i className="fab fa-instagram"></i>
           </a>
@@ -37,21 +42,10 @@ const frontPage = () => {
             href="https://www.linkedin.com/in/raidokaasik/"
             className="social-media-icon"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <i className="fab fa-linkedin"></i>
           </a>
-          {/* <div className="social-media-icon">
-            <i className="fab fa-facebook"></i>
-          </div>
-          <div className="social-media-icon">
-            <i className="fab fa-github"></i>
-          </div>
-          <div className="social-media-icon">
-            <i className="fab fa-instagram"></i>
-          </div>
-          <div className="social-media-icon">
-            <i className="fab fa-linkedin"></i>
-          </div> */}
         </div>
       </div>
     </div>

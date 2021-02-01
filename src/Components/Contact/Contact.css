@@ -7,8 +7,9 @@
   background: #fff;
   width: 100%;
   padding: 70px 70px 100px 70px;
-  min-height: 300px;
+  min-height: 665px;
   color: #242424;
+  transition: 0.3s ease;
 }
 .contact-container {
   width: 70%;
@@ -17,6 +18,7 @@
   justify-content: center;
   align-items: center;
   margin: auto;
+  transition: 0.3s ease;
 }
 .contact-title-and-arrow {
   display: flex;
@@ -37,10 +39,6 @@
 .contact-heading-sm {
   display: flex;
   align-self: flex-start;
-  /* flex-flow: column;
-  align-items: center;
-  justify-content: center; */
-
   padding: 1.5rem 0;
   font-weight: 400;
   width: 100%;
@@ -64,25 +62,10 @@
   justify-content: center; */
   gap: 2px;
 }
+.contact-info label {
+  font-weight: 500;
+}
 
-.contact-input {
-  text-decoration: none;
-  border: none;
-  /* background: rgb(243, 243, 243); */
-  border-bottom: 1px solid #ccc;
-  display: flex;
-  align-self: flex-start;
-  font-size: 1.1rem;
-  outline: none;
-  margin-bottom: 8px;
-  padding: 8px 14px;
-  width: 50%;
-  transition: 0.3s ease;
-}
-.contact-info textarea {
-  width: 100%;
-  resize: none;
-}
 .send-button {
   cursor: pointer;
   margin: 10px 0 0 0;
@@ -102,16 +85,23 @@
   border: 1px solid var(--secondary-color);
   color: white;
 }
+.send-button:disabled {
+  cursor: not-allowed;
+  border: 1px solid rgb(206, 227, 233);
+  background: rgb(206, 227, 233);
+  color: rgb(241, 241, 241);
+}
 .onscreen-alert {
-  margin: 20px 0 20px 0;
+  margin: 60px 0 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: 0.3s ease;
 }
 .onscreen-alert h2 {
   margin-bottom: 10px;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 2rem;
   color: #242424;
 }

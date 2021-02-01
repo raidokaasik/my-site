@@ -5,8 +5,8 @@ import ExpertiseCard from "../Expertisecard/ExpertiseCard.js";
 
 const education = () => {
   const courseList = [
-    "THE COMPLETE 2020 WEB DEVELOPMENT BOOTCAMP by Dr Angela Yu",
-    "REACT - THE COMPLETE GUIDE by Academind",
+    "The Complete web development Bootcamp by Dr Angela Yu",
+    "React - Complete Guide by Academind & Maximilian Schwarzmüller",
   ];
   const courses = courseList.map((item) => <li>{item}</li>);
   return (
@@ -15,11 +15,13 @@ const education = () => {
         title="UNIVERSITY OF TARTU"
         position="B.A in Fine Arts"
         date="2009 September - 2012 June"
+        description="Studies of classical figurative painting and composition"
       />
       <Card
         title="VALI IT! COURSE"
         position="C# and .NET FRAMEWORK"
         date="2020 Februrary - 2020 April"
+        description="Crash-course of C#, .NET Framework and MVC project development"
       />
 
       <Card title="ONLINE COURSES" position="Udemy" description={courses} />

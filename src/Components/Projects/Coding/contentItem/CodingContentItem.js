@@ -10,12 +10,21 @@ const codingContentItem = (props) => {
         <p className="small-title">{props.smallTitle}</p>
         <p className="big-title">{props.bigTitle}</p>
         <div className="coding-content-overlay-buttons">
-          {/* <button onclick={}>{props.rightButton}</button> */}
-          <a href={props.websiteURL} target="_blank" className="website-link">
+          <a
+            href={props.websiteURL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="website-link"
+          >
             {props.rightButton}
             <i className="fas fa-eye"></i>
           </a>
-          <a href={props.githubURL} target="_blank" className="github-link">
+          <a
+            href={props.githubURL}
+            rel="noopener noreferrer"
+            target="_blank"
+            className="github-link"
+          >
             {props.leftButton}
             <i className="fab fa-github"></i>
           </a>
