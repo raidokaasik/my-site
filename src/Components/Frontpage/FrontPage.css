@@ -97,3 +97,12 @@
     background: var(--primary-color);
   }
 }
+@media (max-width: 499px) {
+  .front-title {
+    font-size: 1.8rem;
+  }
+  .name-primary {
+    font-weight: 600;
+    color: #fff;
+  }
+}

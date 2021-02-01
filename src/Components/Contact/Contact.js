@@ -9,10 +9,11 @@ const Contact = () => {
       name: {
         placeholder: "Your Name",
         isValid: false,
-        minLength: 3,
+        minLength: 5,
         isTouched: false,
         type: "text",
         inputVariant: "input",
+        label: "Name",
       },
       email: {
         placeholder: "Your Email",
@@ -21,6 +22,7 @@ const Contact = () => {
         isTouched: false,
         type: "email",
         inputVariant: "input",
+        label: "Email",
       },
       subject: {
         placeholder: "Subject",
@@ -29,14 +31,16 @@ const Contact = () => {
         isTouched: false,
         type: "text",
         inputVariant: "input",
+        label: "Subject",
       },
       message: {
         placeholder: "Your Message",
         isValid: false,
-        minLength: 8,
+        minLength: 5,
         isTouched: false,
         type: "text",
         inputVariant: "textarea",
+        label: "Message",
       },
       isDisabled: true,
     },
@@ -90,22 +94,26 @@ const Contact = () => {
 
   const sendEmail = (event) => {
     event.preventDefault();
-    emailjs
-      .sendForm(
-        "service_b96exus",
-        "template_yaulwq7",
-        event.target,
-        "user_C2fAucUjs6M8lHOKqJFCq"
-      )
-      .then(
-        (result) => {
-          console.log(result);
-          setMailSent(true);
-        },
-        (error) => {
-          console.log(error);
-        }
-      );
+
+    if (!state.customer.isDisabled) {
+      emailjs
+        .sendForm(
+          "service_b96exus",
+          "template_yaulwq7",
+          event.target,
+          "user_C2fAucUjs6M8lHOKqJFCq"
+        )
+        .then(
+          (result) => {
+            console.log(result);
+            setMailSent(true);
+          },
+          (error) => {
+            console.log(error);
+          }
+        );
+    }
+
     event.target.reset();
   };
 
@@ -117,6 +125,13 @@ const Contact = () => {
     updateForm.isDisabled = checkFormInputs();
     updateCustomerElement.isTouched = isTouched(event.target.value);
     updateCustomerElement.isValid = validator(event.target);
+    if (updateCustomerElement.isTouched && !updateCustomerElement.isValid) {
+      updateCustomerElement.label =
+        "minimum " + updateCustomerElement.minLength + " characters required";
+    } else {
+      updateCustomerElement.label =
+        event.target.name[0].toUpperCase() + event.target.name.substring(1);
+    }
     setState({ customer: updateForm });
   };
 
@@ -145,14 +160,17 @@ const Contact = () => {
   ) : (
     <form onSubmit={sendEmail}>
       {customerArray.map((item, index) => (
-        <Input
-          key={item + index}
-          placeholder={item.config.placeholder}
-          variant={item.config.inputVariant}
-          type={item.config.type}
-          name={item.id}
-          onChange={inputHandler}
-        />
+        <div>
+          <label name={item.id}>{item.config.label}</label>
+          <Input
+            key={item + index}
+            // placeholder={item.config.placeholder}
+            variant={item.config.inputVariant}
+            type={item.config.type}
+            name={item.id}
+            onChange={inputHandler}
+          />
+        </div>
       ))}
       <input
         type="submit"
@@ -162,52 +180,6 @@ const Contact = () => {
       />
     </form>
   );
-
-  // const form = mailSent ? (
-  //   notification
-  // ) : (
-  //   <form onSubmit={sendEmail}>
-  //     <input
-  //       className="contact-input"
-  //       type="text"
-  //       name="name"
-  //       placeholder="Your Name"
-  //       onChange={inputHandler}
-  //     />
-
-  //     <input
-  //       className="contact-input"
-  //       type="email"
-  //       name="email"
-  //       placeholder="Your Email"
-  //       onChange={inputHandler}
-  //     />
-
-  //     <input
-  //       className="contact-input"
-  //       type="text"
-  //       name="subject"
-  //       placeholder="Subject"
-  //       onChange={inputHandler}
-  //     />
-
-  //     <textarea
-  //       className="contact-input"
-  //       type="textarea"
-  //       rows="7"
-  //       cols="50"
-  //       name="message"
-  //       placeholder="Your Message"
-  //       onChange={inputHandler}
-  //     />
-  //     <input
-  //       type="submit"
-  //       className="send-button"
-  //       value="SEND"
-  //       disabled={state.customer.isDisabled}
-  //     />
-  //   </form>
-  // );
 
   return (
     <div id="contact">

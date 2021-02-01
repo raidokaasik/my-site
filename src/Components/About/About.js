@@ -65,7 +65,7 @@ class About extends Component {
           </div>
           <h2 id="about-heading-sm">
             Hi! My name is Raido Kaasik, and i'm a senior concept-artist for
-            Gameloft and a web-developer based in Estonia
+            Gameloft and a web-development enthusiast based in Estonia.
           </h2>
 
           <div className="layout-grid">
@@ -75,7 +75,14 @@ class About extends Component {
 
               <p>
                 I have worked past 8 years as concept-artist in mobile game
-                industry and lived most of that time in Hungary and Romania.
+                industry and best part of that time i've spent abroad, in
+                various Eastern-Eurpean countries. Most succesful projects have
+                been Dragon Mania Legends, Modern Combat: Rebel Guns and
+                Ironblade. Aside from being a graphics artst, i discovered
+                programming for myself in early 2020. I began taking Udemy
+                courses for web-development and i've been studying ever since.
+                My hope for the future is to connect creativity with
+                programming... To Be Continued
               </p>
             </div>
             <div className="about-content">

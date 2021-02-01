@@ -50,13 +50,13 @@
   font-weight: 400;
 }
 
-.navbar-logo {
+/* .navbar-logo {
   color: var(--primary-color);
   justify-self: start;
   width: 100%;
   margin-left: 4rem;
   cursor: pointer;
-}
+} */
 
 .fa-react {
   margin-left: 0.1rem;
@@ -89,12 +89,17 @@
   display: none;
 }
 
+.NavbarItem.active .btn-line {
+  background: #242424;
+}
+
 @media screen and (max-width: 700px) {
-  #NavbarItem {
+  .NavbarItem {
     width: 100%;
     position: fixed;
-    background: transparent;
+    background: #fff;
   }
+
   .nav-menu {
     width: 100%;
     height: 135px;
@@ -102,7 +107,6 @@
     flex-direction: column;
     position: absolute;
     top: 70px;
-
     opacity: 1;
     left: -100%;
     transition: all 0.3s ease;
@@ -114,6 +118,7 @@
     z-index: 1;
     transition: all 0.3s ease;
   }
+
   .nav-links {
     color: #242424;
     display: table;
@@ -132,6 +137,7 @@
     width: 100%;
     margin-left: 4rem;
   }
+
   .menu-icon {
     color: #fff;
     display: block;

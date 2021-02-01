@@ -228,4 +228,7 @@
 }
 
 @media (max-width: 499px) {
+  #about {
+    padding: 0;
+  }
 }

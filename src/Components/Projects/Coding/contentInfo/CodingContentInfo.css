@@ -1,12 +1,11 @@
 .coding-content-info {
   padding: 0px 16px;
   margin-top: 10px;
-  /* width: 500px; */
   width: 100%;
 }
 
 .coding-content-info h4 {
-  padding-bottom: 10px;
+  margin: 10px 0 10px 0;
   font-weight: 500;
   font-size: 1.4rem;
 }
@@ -23,14 +22,11 @@
   gap: 5px;
 }
 @media (max-width: 1350px) {
-  .coding-content-info {
-    width: 350px;
-  }
 }
 @media (max-width: 900px) {
   .coding-content-info {
-    min-width: 350px;
-    min-height: 200px;
+    min-width: 250px;
+
     height: 200px;
     width: 90%;
     margin-top: 0;
@@ -45,10 +41,24 @@
 }
 @media (max-width: 499px) {
   .coding-content-info {
+    padding: 0 16px;
+
     min-width: 200px;
-    min-height: 150px;
     height: 150px;
     width: 90%;
     margin-top: 0;
+  }
+  .coding-content-info p {
+    font-weight: 300;
+    padding: 0 20px;
+    font-size: 1.2rem;
+  }
+  .coding-content-info h4 {
+    padding: 10px 20px;
+  }
+  .project-tags {
+    padding: 10px 5px;
+    display: flex;
+    gap: 1px;
   }
 }

@@ -15,3 +15,13 @@
     border-radius: 25px;
   }
 }
+
+@media (max-width: 499px) {
+  .tag {
+    font-size: 0.7rem;
+    color: #242424;
+    border: 1px solid #242424;
+    padding: 3px 8px;
+    border-radius: 25px;
+  }
+}
