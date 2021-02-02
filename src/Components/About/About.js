@@ -78,11 +78,12 @@ class About extends Component {
                 industry and best part of that time i've spent abroad, in
                 various Eastern-Eurpean countries. Most succesful projects have
                 been Dragon Mania Legends, Modern Combat: Rebel Guns and
-                Ironblade. Aside from being a graphics artst, i discovered
-                programming for myself in early 2020. I began taking Udemy
-                courses for web-development and i've been studying ever since.
-                My hope for the future is to connect creativity with
-                programming... To Be Continued
+                Ironblade.
+              </p>
+              <p>
+                Aside from being a graphics artist, i discovered programming for
+                myself in early 2020. I began taking Udemy courses for Front-End
+                development and it's been a blast ever since.
               </p>
             </div>
             <div className="about-content">

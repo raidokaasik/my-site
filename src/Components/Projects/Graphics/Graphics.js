@@ -49,8 +49,8 @@ function Graphics() {
         onClick={() => modalHandler(item)}
       >
         <div className="image-overlay">
-          <h5>BLENDER, PHOTOSHOP</h5>
-          <p>LOREM IPSUM</p>
+          <h5>{item.softwareUsed}</h5>
+          <p>{item.title}</p>
         </div>
         <img
           className="image"

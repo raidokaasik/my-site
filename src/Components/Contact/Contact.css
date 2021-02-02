@@ -63,6 +63,7 @@
   gap: 2px;
 }
 .contact-info label {
+  margin: 0 0 3px 3px;
   font-weight: 400;
   color: rgb(173, 173, 173);
 }
