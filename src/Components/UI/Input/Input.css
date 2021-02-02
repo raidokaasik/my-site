@@ -1,4 +1,5 @@
 .contact-input {
+  cursor: pointer;
   text-decoration: none;
   border: none;
   background: rgb(248, 248, 248);
@@ -14,6 +15,7 @@
 }
 
 .contact-input-textarea {
+  cursor: pointer;
   width: 100%;
   resize: none;
   text-decoration: none;

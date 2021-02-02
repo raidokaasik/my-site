@@ -76,14 +76,15 @@ class About extends Component {
               <p>
                 I have worked past 8 years as concept-artist in mobile game
                 industry and best part of that time i've spent abroad, in
-                various Eastern-Eurpean countries. Most succesful projects have
+                various Eastern-European countries. Most succesful projects have
                 been Dragon Mania Legends, Modern Combat: Rebel Guns and
-                Ironblade.
+                Ironblade, which were made for Gameloft.
               </p>
               <p>
                 Aside from being a graphics artist, i discovered programming for
                 myself in early 2020. I began taking Udemy courses for Front-End
-                development and it's been a blast ever since.
+                development and it's been a blast ever since. I hope to put my
+                creativity and technical knowledge in good use.
               </p>
             </div>
             <div className="about-content">

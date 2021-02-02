@@ -34,8 +34,8 @@
   position: absolute;
   opacity: 0;
   transform: translate(0, -10vh);
-  display: flex;
   flex-direction: column;
+  display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.3s ease;

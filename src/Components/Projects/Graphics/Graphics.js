@@ -48,15 +48,15 @@ function Graphics() {
         className="image-3d"
         onClick={() => modalHandler(item)}
       >
-        <div className="image-overlay">
-          <h5>{item.softwareUsed}</h5>
-          <p>{item.title}</p>
-        </div>
         <img
           className="image"
           src={require(`../../../images/Graphics/ThumbnailImages/${item.name}.jpg`)}
           alt="nice"
         ></img>
+        <div className="image-overlay">
+          <h5>{item.softwareUsed}</h5>
+          <p>{item.title}</p>
+        </div>
       </div>
     );
   });

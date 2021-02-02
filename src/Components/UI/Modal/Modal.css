@@ -1,6 +1,6 @@
 .modal {
   position: fixed;
-  z-index: 20;
+  z-index: 100;
   display: flex;
   justify-content: center;
   flex-flow: row;
