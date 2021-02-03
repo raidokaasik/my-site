@@ -16,6 +16,7 @@ const Contact = () => {
         label: "Name",
       },
       email: {
+        key: "",
         placeholder: "Your Email",
         isValid: false,
         minLength: 8,
@@ -27,7 +28,6 @@ const Contact = () => {
       subject: {
         placeholder: "Subject",
         isValid: false,
-        minLength: 3,
         isTouched: false,
         type: "text",
         inputVariant: "input",
@@ -42,17 +42,21 @@ const Contact = () => {
         inputVariant: "textarea",
         label: "Message",
       },
-      isDisabled: true,
+      // isDisabled: true,
     },
   });
+  const [disabled, setDisabled] = React.useState(true);
   const [mailSent, setMailSent] = React.useState(false);
 
   // Input field Validator
 
   const validator = (target) => {
     let isValid = false;
-    const targetMinLenght = state.customer[target.name];
-    if (target.value.length < targetMinLenght.minLength) {
+    const targetMinLenght = { ...state.customer[target.name] };
+    if (
+      target.value.length < targetMinLenght.minLength ||
+      target.value === ""
+    ) {
       isValid = false;
     } else {
       isValid = true;
@@ -77,17 +81,12 @@ const Contact = () => {
   const checkFormInputs = () => {
     const input = state.customer;
     let formDisabled = true;
-    if (
-      input.name.isValid &&
-      input.email.isValid &&
-      input.subject.isValid &&
-      input.message.isValid
-    ) {
+    if (input.name.isValid && input.email.isValid && input.message.isValid) {
       formDisabled = false;
     } else {
       formDisabled = true;
     }
-    return formDisabled;
+    setDisabled(formDisabled);
   };
 
   // EMAIL JS Form submission
@@ -95,7 +94,7 @@ const Contact = () => {
   const sendEmail = (event) => {
     event.preventDefault();
 
-    if (!state.customer.isDisabled) {
+    if (!disabled) {
       emailjs
         .sendForm(
           "service_b96exus",
@@ -122,7 +121,6 @@ const Contact = () => {
   const inputHandler = (event) => {
     const updateForm = { ...state.customer };
     const updateCustomerElement = updateForm[event.target.name];
-    updateForm.isDisabled = checkFormInputs();
     updateCustomerElement.isTouched = isTouched(event.target.value);
     updateCustomerElement.isValid = validator(event.target);
     if (updateCustomerElement.isTouched && !updateCustomerElement.isValid) {
@@ -132,6 +130,7 @@ const Contact = () => {
       updateCustomerElement.label =
         event.target.name[0].toUpperCase() + event.target.name.substring(1);
     }
+    checkFormInputs();
     setState({ customer: updateForm });
   };
 
@@ -160,11 +159,9 @@ const Contact = () => {
   ) : (
     <form onSubmit={sendEmail}>
       {customerArray.map((item, index) => (
-        <div>
+        <div key={item.id}>
           <label name={item.id}>{item.config.label}</label>
           <Input
-            key={item + index}
-            // placeholder={item.config.placeholder}
             variant={item.config.inputVariant}
             type={item.config.type}
             name={item.id}
@@ -176,7 +173,7 @@ const Contact = () => {
         type="submit"
         className="send-button"
         value="SEND"
-        disabled={state.customer.isDisabled}
+        disabled={disabled}
       />
     </form>
   );

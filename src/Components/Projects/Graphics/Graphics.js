@@ -8,14 +8,18 @@ function Graphics() {
   const [currentImage, setCurrentImage] = useState({});
   const [modal, setModal] = useState(false);
   const [backDrop, setBackDrop] = useState(false);
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
+
+  // Opens Modal when image is clicked
 
   const modalHandler = (item) => {
     setModal(!modal);
     setBackDrop(!backDrop);
     setCurrentImage(item);
-    setCount(item.nr);
+    // setCount(item.nr);
   };
+
+  // Set previous Image
 
   const prevImageHandler = () => {
     if (currentImage.nr > 1) {
@@ -29,6 +33,8 @@ function Graphics() {
     }
   };
 
+  // Set next image
+
   const nextImageHandler = () => {
     if (currentImage.nr !== GraphicsData.length) {
       setCurrentImage(
@@ -40,6 +46,8 @@ function Graphics() {
       );
     }
   };
+
+  // gallery images mapped from mock GraphicsData
 
   const images = GraphicsData.map((item, index) => {
     return (

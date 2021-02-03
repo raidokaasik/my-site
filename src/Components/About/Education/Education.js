@@ -1,14 +1,14 @@
 import React from "react";
 import "./Education.css";
 import Card from "../Card/Card.js";
-import ExpertiseCard from "../Expertisecard/ExpertiseCard.js";
+
+const courseList = [
+  "The Complete web development Bootcamp by Dr Angela Yu",
+  "React - Complete Guide by Academind & Maximilian Schwarzmüller",
+];
 
 const education = () => {
-  const courseList = [
-    "The Complete web development Bootcamp by Dr Angela Yu",
-    "React - Complete Guide by Academind & Maximilian Schwarzmüller",
-  ];
-  const courses = courseList.map((item) => <li>{item}</li>);
+  const courses = courseList.map((item, index) => <li key={index}>{item}</li>);
   return (
     <div className="education-container">
       <Card
@@ -25,8 +25,6 @@ const education = () => {
       />
 
       <Card title="ONLINE COURSES" position="Udemy" description={courses} />
-
-      {/* <ExpertiseCard section="UDEMY COURSES" skill={courses} /> */}
     </div>
   );
 };

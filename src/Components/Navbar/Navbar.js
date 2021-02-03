@@ -21,12 +21,16 @@ class Navbar extends Component {
     window.removeEventListener("scroll", this.handleScroll);
   }
 
+  // Hides and Shows the Navbar if the scrollY is more than 80px - height of the navbar.
+
   handleScroll = () => {
     if (window.scrollY >= 80) this.setState({ showNav: true });
     else {
       this.setState({ showNav: false });
     }
   };
+
+  // Handles the small menubutton when it's clicked on smaller screens.
 
   menuClickHandler = () => {
     const menubtn = document.querySelector(".menu-btn");
@@ -39,6 +43,8 @@ class Navbar extends Component {
       this.setState({ showMenu: !showMenu });
     }
   };
+
+  // Sets a new state when small menu button is clicked on smaller screens and shows the nav menu.
 
   onClickHandle = () => {
     return this.setState({ clicked: !this.state.clicked });

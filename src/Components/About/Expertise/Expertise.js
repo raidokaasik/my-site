@@ -13,15 +13,17 @@ const expertise = () => {
   ];
   const codingList = ["HTML5", "CSS3", "JS ES6", "REACT"];
   const serviceList = [
-    "CONCEPT ART DEVELOPMENT",
-    "MOBILE GAME DEVELOPMENT",
-    "3D CONCEPTING",
-    "3D MODELLING(low poly/high poly)",
-    "TEXTURE PAINTING",
+    "Concept art Development",
+    "Mobile game Development",
+    "3D Concepting",
+    "3D Modelling(low-high poly)",
+    "Texture Painting",
   ];
-  const services = serviceList.map((item) => <li>{item}</li>);
-  const skills = skillList.map((item) => <li>{item}</li>);
-  const coding = codingList.map((item) => <li>{item}</li>);
+  const services = serviceList.map((item, index) => (
+    <li key={index}>{item}</li>
+  ));
+  const skills = skillList.map((item, index) => <li key={index}>{item}</li>);
+  const coding = codingList.map((item, index) => <li key={index}>{item}</li>);
 
   return (
     <div className="expertise-container">

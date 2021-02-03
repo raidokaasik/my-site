@@ -7,7 +7,7 @@ import data from "../../../Data/Data.js";
 const coding = () => {
   const codingProjects = data.map((item) => {
     return (
-      <div className="coding-content-element">
+      <div className="coding-content-element" key={item.id}>
         <CodingContentItem
           key={item.id}
           imageSource={require(`../../../images/Coding/` + item.logo)}

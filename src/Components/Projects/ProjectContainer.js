@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import "./ProjectContainer.css";
 import Graphics from "./Graphics/Graphics.js";
 import Coding from "./Coding/Coding.js";
@@ -11,10 +11,12 @@ class ProjectContainer extends Component {
     graphics: false,
     coding: true,
     ui: false,
-    modal: false,
-    backDrop: false,
-    modalImageId: null,
+    // modal: false,
+    // backDrop: false,
+    // modalImageId: null,
   };
+
+  // Handles different modules for the Pojects window
 
   graphicsHandler = () => {
     this.setState({ graphics: true, coding: false, ui: false });
@@ -26,15 +28,10 @@ class ProjectContainer extends Component {
     this.setState({ graphics: false, coding: false, ui: true });
   };
 
-  modalHandler = () => {
-    this.setState({ modal: !this.state.modal });
-    this.setState({ backDrop: !this.state.backDrop });
-  };
-
-  modalHandler = () => {
-    console.log("modal ON");
-    this.setState({ modal: true });
-  };
+  // modalHandler = () => {
+  //   this.setState({ modal: !this.state.modal });
+  //   this.setState({ backDrop: !this.state.backDrop });
+  // };
 
   render() {
     return (
@@ -79,7 +76,9 @@ class ProjectContainer extends Component {
             </div>
 
             {this.state.graphics ? (
-              <Graphics clicked={this.modalHandler} />
+              <Graphics
+              // clicked={this.modalHandler}
+              />
             ) : null}
             {this.state.coding ? <Coding /> : null}
             {this.state.ui ? <Ui /> : null}

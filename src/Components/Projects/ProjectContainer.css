@@ -99,7 +99,6 @@
 @media (max-width: 1056px) {
   .project-menu-buttons {
     gap: 2px;
-    /* padding-right: 20px; */
   }
   .project-menu-buttons button {
     margin: 0 2px;
