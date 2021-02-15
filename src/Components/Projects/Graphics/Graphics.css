@@ -142,6 +142,11 @@
 }
 
 @media (max-width: 560px) {
+  .image-3d {
+    border-radius: 2px;
+    min-width: 300px;
+    min-height: 300px;
+  }
   .image-overlay p {
     font-size: 1.3rem;
   }

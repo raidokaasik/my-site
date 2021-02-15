@@ -1,5 +1,6 @@
 import React from "react";
 import "./FrontPage.css";
+const frontImage = require("../../images/image-9.jpg");
 
 const frontPage = () => {
   return (
@@ -48,6 +49,7 @@ const frontPage = () => {
           </a>
         </div>
       </div>
+      <img src={frontImage} alt="frontPage"></img>
     </div>
   );
 };
