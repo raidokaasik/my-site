@@ -20,20 +20,3 @@
     transform: scale(0.7);
   }
 }
-/* .portrait-left{
-    transform: translateX(45%);
-    transition: .5s ease;
-}
-
-.portrait-right{
-    transform: translateX(-45%);
-    transition: .5s ease;
-
-}
-
-.portrait-container:hover .portrait-left{
-    transform: translateX(55%);
-}
-.portrait-container:hover .portrait-right{
-    transform: translateX(-55%);
-} */
