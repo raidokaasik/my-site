@@ -84,7 +84,8 @@ class About extends Component {
                 Aside from being a graphics artist, i discovered programming for
                 myself in early 2020. I began taking Udemy courses for Front-End
                 development and it's been a blast ever since. I hope to put my
-                creativity and technical knowledge in good use.
+                creativity and technical knowledge in good use for the future
+                projects.
               </p>
             </div>
             <div className="about-content">

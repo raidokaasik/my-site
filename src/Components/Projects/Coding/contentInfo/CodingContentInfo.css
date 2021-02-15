@@ -1,4 +1,6 @@
 .coding-content-info {
+  display: flex;
+  flex-direction: column;
   padding: 0px 16px;
   margin-top: 10px;
   width: 100%;
@@ -25,8 +27,8 @@
 }
 @media (max-width: 900px) {
   .coding-content-info {
+    padding: 0px;
     min-width: 250px;
-
     height: 200px;
     width: 90%;
     margin-top: 0;
@@ -39,22 +41,27 @@
     gap: 2px;
   }
 }
+@media (max-width: 700px) {
+  .coding-content-info {
+    width: 100%;
+  }
+}
 @media (max-width: 499px) {
   .coding-content-info {
-    padding: 0 16px;
-
+    padding: 0 10px;
     min-width: 200px;
-    height: 150px;
-    width: 90%;
+    /* height: 150px; */
+    width: 100%;
     margin-top: 0;
+    margin-bottom: 50px;
   }
   .coding-content-info p {
     font-weight: 300;
-    padding: 0 20px;
+    padding: 0 10px;
     font-size: 1.2rem;
   }
   .coding-content-info h4 {
-    padding: 10px 20px;
+    padding: 10px;
   }
   .project-tags {
     padding: 10px 5px;

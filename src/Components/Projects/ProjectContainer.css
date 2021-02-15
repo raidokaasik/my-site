@@ -108,6 +108,9 @@
   }
 }
 @media (max-width: 900px) {
+  #project-main {
+    padding: 30px 30px 80px 30px;
+  }
   .arrow {
     transform: rotate(90deg);
   }
@@ -144,6 +147,9 @@
   }
 }
 @media (max-width: 700px) {
+  #project-main {
+    padding: 30px 30px 80px 30px;
+  }
   .project-menu-buttons button {
     margin: 2px 10px;
     border-radius: 3px;

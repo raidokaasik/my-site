@@ -9,20 +9,6 @@
 }
 
 @media (max-width: 1350px) {
-  .coding-content-info {
-    width: 350px;
-  }
-}
-@media (max-width: 900px) {
-  .coding-content-info {
-    min-width: 350px;
-    min-height: 200px;
-    height: 200px;
-    width: 90%;
-    margin-top: 0;
-  }
-}
-@media (max-width: 1350px) {
   .break-line {
   }
 }

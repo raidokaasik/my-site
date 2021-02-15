@@ -123,11 +123,17 @@
     transform: translate(0vw, 0vh);
   }
   .coding-content-item {
+    padding: 0;
     display: flex;
     min-width: 350px;
     min-height: 200px;
     height: 200px;
     width: 90%;
+  }
+}
+@media (max-width: 700px) {
+  .coding-content-item {
+    width: 100%;
   }
 }
 @media (max-width: 499px) {
