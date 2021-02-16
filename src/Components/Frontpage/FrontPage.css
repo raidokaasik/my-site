@@ -8,13 +8,13 @@
 }
 
 .frontimage-container {
-  height: calc(100vh - 60px);
-  width: 100vw;
+  height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
   /* padding-left: 18vw; */
   /* background: url("../../images/image-9.jpg") center center/cover no-repeat; */
-  min-height: calc(100vh - 60px);
+  /* min-height: calc(100vh - 60px); */
 }
 .frontimage-container img {
   width: 100%;
@@ -24,9 +24,10 @@
 }
 
 .front-header {
+  left: 18%;
+  top: 45%;
   z-index: 1;
   position: absolute;
-  top: 10vh;
 }
 
 .front-title {
