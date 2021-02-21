@@ -52,6 +52,7 @@ const frontPage = () => {
         </div>
       </div>
       <ProgressiveImage
+        // delay={1000}
         src={frontImage}
         placeholder={
           <img
@@ -64,9 +65,9 @@ const frontPage = () => {
         {(src, loading) => (
           <img
             style={{
-              backgroundColor: "#242424",
+              // backgroundColor: "#242424",
               filter: loading ? "blur(10px)" : "",
-              transition: "0.7s filter linear",
+              transition: "1s filter linear",
             }}
             src={src}
             alt="frontImage"
