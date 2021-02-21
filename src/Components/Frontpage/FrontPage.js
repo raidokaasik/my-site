@@ -1,8 +1,8 @@
 import React from "react";
 import "./FrontPage.css";
-import { Defer, Img } from "react-progressive-loader";
+import { Defer } from "react-progressive-loader";
 const frontImage = require("../../images/image-9.jpg");
-const placeholderImage = require("../../images/image-9-tiny3.jpg");
+
 const placeholderImage2 = require("../../images/image-9-tiny5.jpg");
 
 const frontPage = () => {
