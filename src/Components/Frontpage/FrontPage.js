@@ -53,7 +53,7 @@ const frontPage = () => {
       <div className="progressive-loading-image">
         <div className="progressive-loading-image-scale">
           <ProgressiveImage
-            delay={1000}
+            // delay={1000}
             src={frontImage}
             placeholder={
               <img
