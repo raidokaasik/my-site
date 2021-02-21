@@ -2,7 +2,7 @@ import React from "react";
 import "./FrontPage.css";
 import ProgressiveImage from "react-progressive-image";
 const frontImage = require("../../images/image-9.jpg");
-const placeholderImage2 = require("../../images/image-9-tiny5.jpg");
+// const placeholderImage2 = require("../../images/image-9-tiny5.jpg");
 
 const frontPage = () => {
   return (
@@ -51,10 +51,23 @@ const frontPage = () => {
           </a>
         </div>
       </div>
-      <ProgressiveImage src={frontImage} placeholder={placeholderImage2}>
+      <ProgressiveImage
+        src={frontImage}
+        placeholder={
+          <img
+            className="placeholderImage"
+            src="../../images/image-9-tiny6.jpg"
+            alt="placeHolder"
+          ></img>
+        }
+      >
         {(src, loading) => (
           <img
-            style={{ opacity: loading ? 0.5 : 1 }}
+            style={{
+              backgroundColor: "#242424",
+              filter: loading ? "blur(10px)" : "",
+              transition: "0.7s filter linear",
+            }}
             src={src}
             alt="frontImage"
           />
