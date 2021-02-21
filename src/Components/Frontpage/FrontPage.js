@@ -1,6 +1,9 @@
 import React from "react";
 import "./FrontPage.css";
+import { Defer, Img } from "react-progressive-loader";
 const frontImage = require("../../images/image-9.jpg");
+const placeholderImage = require("../../images/image-9-tiny3.jpg");
+const placeholderImage2 = require("../../images/image-9-tiny5.jpg");
 
 const frontPage = () => {
   return (
@@ -49,7 +52,18 @@ const frontPage = () => {
           </a>
         </div>
       </div>
-      <img src={frontImage} alt="frontPage"></img>
+      <Defer
+        render={() => <img src={frontImage} alt="frontPage"></img>}
+        renderPlaceholder={() => (
+          <img src={placeholderImage2} alt="placeholder"></img>
+        )}
+        loadOnScreen
+      />
+      {/* <Img
+        src="../../images/image-9.jpg"
+        placeholderSrc="../../images/image-9-tiny3.jpg"
+      /> */}
+      {/* <img src={frontImage} alt="frontPage"></img> */}
     </div>
   );
 };
