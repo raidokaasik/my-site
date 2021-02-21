@@ -56,7 +56,7 @@ const frontPage = () => {
         placeholder={
           <img
             className="placeholderImage"
-            src="../../images/image-9-tiny5.jpg"
+            src="../../images/image-9-tiny4.jpg"
             alt="placeHolder"
           ></img>
         }
@@ -66,7 +66,7 @@ const frontPage = () => {
             style={{
               // backgroundColor: "#242424",
               filter: loading ? "blur(10px)" : "",
-              transition: "0.5s filter linear",
+              transition: "0.7s filter linear",
             }}
             src={src}
             alt="frontImage"
