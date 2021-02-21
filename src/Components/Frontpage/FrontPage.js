@@ -7,8 +7,7 @@ const frontPage = () => {
   return (
     // Name and Social media Icons
 
-    <div className="frontimage">
-      <div className="frontimage-container"></div>
+    <div className="frontimage-container">
       <div className="front-header">
         <div className="front-title">
           <h1 className="name-primary">
@@ -51,31 +50,29 @@ const frontPage = () => {
           </a>
         </div>
       </div>
-      <div className="progressive-image">
-        <ProgressiveImage
-          // delay={1000}
-          src={frontImage}
-          placeholder={
-            <img
-              className="placeholderImage"
-              src="../../images/image-9-tiny2.jpg"
-              alt="placeHolder"
-            ></img>
-          }
-        >
-          {(src, loading) => (
-            <img
-              style={{
-                // backgroundColor: "#242424",
-                filter: loading ? "blur(10px)" : "",
-                transition: "0.7s filter linear",
-              }}
-              src={src}
-              alt="frontImage"
-            />
-          )}
-        </ProgressiveImage>
-      </div>
+      <ProgressiveImage
+        // delay={3000}
+        src={frontImage}
+        placeholder={
+          <img
+            className="placeholderImage"
+            src="../../images/image-9-tiny2.jpg"
+            alt="placeHolder"
+          ></img>
+        }
+      >
+        {(src, loading) => (
+          <img
+            style={{
+              filter: loading ? "blur(10px)" : "",
+              transition: "0.7s filter linear",
+            }}
+            src={src}
+            alt="frontImage"
+          />
+        )}
+      </ProgressiveImage>
+      <div className="onload-image"></div>
       {/* <img src={frontImage} alt="frontPage"></img> */}
     </div>
   );

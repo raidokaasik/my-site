@@ -7,25 +7,16 @@
   --secondary-color: rgb(95, 200, 241);
 }
 
-.frontimage {
-  background: #242424;
-  height: 100vh;
-  width: 100%;
-}
 .frontimage-container {
   /* background-color: #242424; */
-  /* height: 100vh;
-  width: 100%; */
+  height: 100vh;
   width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   /* padding-left: 18vw; */
   background: url("../../images/image-9-tiny2.jpg") center center/cover
     no-repeat;
   overflow: hidden;
-
-  filter: blur(10px);
 
   /* min-height: calc(100vh - 60px); */
 }
@@ -42,18 +33,12 @@
   width: 2257px;
   height: 1080px;
 }
-.progressive-image {
-  display: flex;
-
-  justify-content: center;
-  overflow: hidden;
-  width: 100%;
-  height: 100vh;
+/* .onload-image {
   position: absolute;
-  top: 0;
-  left: 0;
-}
-
+  background: coral;
+  width: 100%;
+  height: 100%;
+} */
 .front-header {
   left: 18%;
   top: 45%;
