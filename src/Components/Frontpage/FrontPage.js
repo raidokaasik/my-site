@@ -50,29 +50,36 @@ const frontPage = () => {
           </a>
         </div>
       </div>
-      <ProgressiveImage
-        // delay={3000}
-        src={frontImage}
-        placeholder={
-          <img
-            className="placeholderImage"
-            src="../../images/image-9-tiny2.jpg"
-            alt="placeHolder"
-          ></img>
-        }
-      >
-        {(src, loading) => (
-          <img
-            style={{
-              filter: loading ? "blur(10px)" : "",
-              transition: "0.7s filter linear",
-            }}
-            src={src}
-            alt="frontImage"
-          />
-        )}
-      </ProgressiveImage>
-      <div className="onload-image"></div>
+      <div className="progressive-loading-image">
+        <div className="progressive-loading-image-scale">
+          <ProgressiveImage
+            delay={1000}
+            src={frontImage}
+            placeholder={
+              <img
+                className="placeholderImage"
+                src="../../images/image-9-tiny2.jpg"
+                alt="placeHolder"
+              ></img>
+            }
+          >
+            {(src, loading) => (
+              <img
+                style={{
+                  filter: loading ? "blur(10px)" : "",
+                  transition: "0.7s filter linear",
+                }}
+                src={src}
+                alt="frontImage"
+              />
+            )}
+          </ProgressiveImage>
+        </div>
+      </div>
+      <div className="onload-image">
+        <div className="onload-image-scale"></div>
+      </div>
+
       {/* <img src={frontImage} alt="frontPage"></img> */}
     </div>
   );
