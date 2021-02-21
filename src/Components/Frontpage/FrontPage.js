@@ -1,8 +1,7 @@
 import React from "react";
 import "./FrontPage.css";
-import { Defer } from "react-progressive-loader";
+import ProgressiveImage from "react-progressive-image";
 const frontImage = require("../../images/image-9.jpg");
-
 const placeholderImage2 = require("../../images/image-9-tiny5.jpg");
 
 const frontPage = () => {
@@ -52,17 +51,15 @@ const frontPage = () => {
           </a>
         </div>
       </div>
-      <Defer
-        render={() => <img src={frontImage} alt="frontPage"></img>}
-        renderPlaceholder={() => (
-          <img src={placeholderImage2} alt="placeholder"></img>
+      <ProgressiveImage src={frontImage} placeholder={placeholderImage2}>
+        {(src, loading) => (
+          <img
+            style={{ opacity: loading ? 0.5 : 1 }}
+            src={src}
+            alt="frontImage"
+          />
         )}
-        loadOnScreen
-      />
-      {/* <Img
-        src="../../images/image-9.jpg"
-        placeholderSrc="../../images/image-9-tiny3.jpg"
-      /> */}
+      </ProgressiveImage>
       {/* <img src={frontImage} alt="frontPage"></img> */}
     </div>
   );
