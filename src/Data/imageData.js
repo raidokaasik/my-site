@@ -27,20 +27,20 @@ const graphicsData = [
     softwareUsed: ["PHOTOSHOP "],
     title: "BEETLES",
   },
-  {
-    nr: 5,
-    id: "g05",
-    name: "Graphics_05",
-    softwareUsed: ["PHOTOSHOP ", "BLENDER "],
-    title: "STYLIZED CHARACTERS",
-  },
-  {
-    nr: 6,
-    id: "g06",
-    name: "Graphics_06",
-    softwareUsed: ["PHOTOSHOP ", "BLENDER "],
-    title: "STYLIZED CHARACTERS",
-  },
+  // {
+  //   nr: 5,
+  //   id: "g05",
+  //   name: "Graphics_05",
+  //   softwareUsed: ["PHOTOSHOP ", "BLENDER "],
+  //   title: "STYLIZED CHARACTERS",
+  // },
+  // {
+  //   nr: 6,
+  //   id: "g06",
+  //   name: "Graphics_06",
+  //   softwareUsed: ["PHOTOSHOP ", "BLENDER "],
+  //   title: "STYLIZED CHARACTERS",
+  // },
 ];
 
 export default graphicsData;

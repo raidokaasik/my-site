@@ -41,7 +41,7 @@
   position: absolute;
 }
 .onload-image-scale {
-  background: url("../../images/image-9-tiny2.jpg") center center/cover
+  background: url("../../images/image-9-tiny6.jpg") center center/cover
     no-repeat;
   filter: blur(10px);
   transform: scale(1.1);

@@ -1,7 +1,7 @@
 import React from "react";
 import "./FrontPage.css";
 import ProgressiveImage from "react-progressive-image";
-const frontImage = require("../../images/image-9.jpg");
+// const frontImage = require("../../images/image-9.jpg");
 
 const frontPage = () => {
   return (
@@ -53,12 +53,11 @@ const frontPage = () => {
       <div className="progressive-loading-image">
         <div className="progressive-loading-image-scale">
           <ProgressiveImage
-            // delay={1000}
-            src={frontImage}
+            src={require("../../images/image-9.jpg")}
             placeholder={
               <img
                 className="placeholderImage"
-                src="../../images/image-9-tiny2.jpg"
+                src={require("../../images/image-9-tiny6.jpg")}
                 alt="placeHolder"
               ></img>
             }
@@ -67,7 +66,7 @@ const frontPage = () => {
               <img
                 style={{
                   filter: loading ? "blur(10px)" : "",
-                  transition: "0.7s filter linear",
+                  transition: "0.5s filter linear",
                 }}
                 src={src}
                 alt="frontImage"
@@ -79,8 +78,6 @@ const frontPage = () => {
       <div className="onload-image">
         <div className="onload-image-scale"></div>
       </div>
-
-      {/* <img src={frontImage} alt="frontPage"></img> */}
     </div>
   );
 };
