@@ -1,6 +1,6 @@
 import React from "react";
 import "./FrontPage.css";
-// import ProgressiveImage from "react-progressive-image";
+import ProgressiveImage from "react-progressive-image";
 // const frontImage = require("../../images/image-9.jpg");
 
 const frontPage = () => {
@@ -52,15 +52,15 @@ const frontPage = () => {
       </div>
       <div className="progressive-loading-image">
         <div className="progressive-loading-image-scale">
-          {/* <ProgressiveImage
+          <ProgressiveImage
             src={require("../../images/image-9.jpg")}
-            placeholder={
-              <img
-                className="placeholderImage"
-                src={require("../../images/image-9-tiny6.jpg")}
-                alt="placeHolder"
-              ></img>
-            }
+            // placeholder={
+            //   <img
+            //     className="placeholderImage"
+            //     src={require("../../images/image-9-tiny6.jpg")}
+            //     alt="placeHolder"
+            //   />
+            // }
           >
             {(src, loading) => (
               <img
@@ -72,8 +72,8 @@ const frontPage = () => {
                 alt="frontImage"
               />
             )}
-          </ProgressiveImage> */}
-          <img src={require("../../images/image-9.jpg")} alt="frontImage"></img>
+          </ProgressiveImage>
+          {/* <img src={require("../../images/image-9.jpg")} alt="frontImage"></img> */}
         </div>
       </div>
       <div className="onload-image">
