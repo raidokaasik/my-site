@@ -1,6 +1,6 @@
 import React from "react";
 import "./FrontPage.css";
-import ProgressiveImage from "react-progressive-image";
+// import ProgressiveImage from "react-progressive-image";
 // const frontImage = require("../../images/image-9.jpg");
 
 const frontPage = () => {
