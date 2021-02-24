@@ -52,7 +52,7 @@ const frontPage = () => {
       </div>
       <div className="progressive-loading-image">
         <div className="progressive-loading-image-scale">
-          <ProgressiveImage
+          {/* <ProgressiveImage
             src={require("../../images/image-9.jpg")}
             placeholder={
               <img
@@ -72,7 +72,8 @@ const frontPage = () => {
                 alt="frontImage"
               />
             )}
-          </ProgressiveImage>
+          </ProgressiveImage> */}
+          <img src={require("../../images/image-9.jpg")} alt="frontImage"></img>
         </div>
       </div>
       <div className="onload-image">
